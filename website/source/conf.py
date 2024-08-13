@@ -3,7 +3,7 @@
 # For the full list of built-in configuration values, see the documentation:
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 
-repo_url = "https://github.com/kandersolar/pvatlas"
+repo_url = "https://github.com/sandialabs/pv-atlas"
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
@@ -69,7 +69,7 @@ import matplotlib.pyplot as plt
 
 
 if os.getenv("GITHUB_ACTIONS") == "true":
-    HTML_ROOT = "/pvatlas/"
+    HTML_ROOT = "/pv-atlas/"
 else:
     HTML_ROOT = "/"
 

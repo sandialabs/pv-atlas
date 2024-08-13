@@ -1,7 +1,7 @@
 # PV Atlas
 
 This is the website for PV Atlas, a project led by the
-PV Performance Modeling Collaborative (`PVPMC <http://pvpmc.sandia.gov>`_).
+PV Performance Modeling Collaborative ([PVPMC](http://pvpmc.sandia.gov>)).
 
 PV Atlas investigates the effect of climate and geography on
 various aspects of photovoltaic (PV) performance modeling and analysis.
