@@ -1,3 +1,9 @@
+website/build
+website/source/_static/thumbnails
+
+
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
