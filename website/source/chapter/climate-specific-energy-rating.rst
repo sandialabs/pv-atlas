@@ -5,6 +5,7 @@
 Climatic-specific energy rating
 ===============================
 
+*Content contributed by Sandia National Laboratories*
 
 Introduction
 ------------
