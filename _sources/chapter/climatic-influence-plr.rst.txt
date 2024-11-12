@@ -5,6 +5,7 @@
 Climatic influence on PLR uncertainty
 =====================================
 
+*Content contributed by Sandia National Laboratories*
 
 Introduction
 ------------
