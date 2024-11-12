@@ -1,6 +1,4 @@
 
-.. map-header::
-
 
 Climatic influence on PLR uncertainty
 =====================================
@@ -130,4 +128,7 @@ files listed below:
 
 .. geotiff-index::
     :pattern: geotiffs/synthetic-plr/*.tiff
+
+
+.. map-header::
 
