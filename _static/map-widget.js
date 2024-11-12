@@ -177,6 +177,7 @@ function init(id, options){
     container: 'sidebar-' + id,
     position: 'left',
   }).addTo(map);
+  $("#sidebar-" + id).css("display", "");  // overwrite default display:none
 
   // colorbar
   if(options.colorscale_name !== '' && options.colorscale_min !== '' && options.colorscale_name !== ''){
