@@ -20,7 +20,7 @@ L.Control.Layers.include({
 });
 
 
-function rasterToLayer(georaster, metadata, options){
+function rasterToLayer(georaster, options){
   // console.log(chroma.brewer);
 
   // default values, to be optionally overridden by configuration in RST
@@ -76,7 +76,7 @@ function addLayer(filename, map, layerControl, name, order, options){
             });
         });
 
-        var layer = rasterToLayer(georaster, metadata, options);
+        var layer = rasterToLayer(georaster, options);
         layer.options.order = order;
         layer.options.filename = filename;
         layer.options.metadata = metadata;
@@ -249,8 +249,10 @@ function init(id, options){
         }
       }
     }
-    var georaster1 = getGeoraster(document.getElementById("select-layer1-" + id).value);
-    var georaster2 = getGeoraster(document.getElementById("select-layer2-" + id).value);
+    var name1 = document.getElementById("select-layer1-" + id).value;
+    var name2 = document.getElementById("select-layer2-" + id).value;
+    var georaster1 = getGeoraster(name1);
+    var georaster2 = getGeoraster(name2);
     var georasterDifference = await doArithmetic("a - b", georaster1, georaster2);
 
     if(calculationLayer !== null){
@@ -258,8 +260,12 @@ function init(id, options){
       map.removeLayer(calculationLayer);
     }
     // TODO: metadata for calculated layer?
-    calculationLayer = rasterToLayer(georasterDifference, {});
-    calculationLayer.addTo(map);
+    calculationLayer = rasterToLayer(georasterDifference, options);
+    calculationLayer.options.metadata = {
+      DESCRIPTION: "Calculated from layers '" + name1 + "' and '" + name2 + "'.",
+      CREATION_DATE: "N/A",
+    };
+    // calculationLayer.addTo(map);
     layerControl.addBaseLayer(calculationLayer, "Calculated");
   }
   document.getElementById("select-layer1-" + id).onchange = onSelectChange;
