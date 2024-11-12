@@ -58,3 +58,4 @@ This project uses many open-source software packages, including:
    :caption: Chapters
 
    chapter/climatic-influence-plr
+   chapter/cell-eqe-influence
