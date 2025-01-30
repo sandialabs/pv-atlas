@@ -76,7 +76,7 @@ We calculate CSER across the United States using solar resource and spectral
 irradiance data from the NSRDB PSM3 datasets for calendar year 2022.
 
 For full details on the simulation and analysis methodology,
-see :cite:`Anderson2024cser`.
+see :cite:`Anderson2025cser`.
 
 How does CSER vary geographically?
 ----------------------------------
@@ -207,7 +207,7 @@ References
    :list: enumerated
    :filter: False 
 
-   Anderson2024cser   
+   Anderson2025cser   
 
 
 Data files
