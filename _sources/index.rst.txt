@@ -57,4 +57,5 @@ This project uses many open-source software packages, including:
    :maxdepth: 2
    :caption: Chapters
 
+   chapter/geographic-variation-energy-rating
    chapter/climatic-influence-plr

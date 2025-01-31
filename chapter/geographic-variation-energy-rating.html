@@ -1,0 +1,865 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Geographic variation in energy rating &#8212; PV Atlas</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Climatic influence on PLR uncertainty" href="climatic-influence-plr.html" />
+    <link rel="prev" title="Publications" href="../publications.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">PV Atlas</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  About
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../index.html">
+   About PV Atlas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../methodology.html">
+   Methodology
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../data.html">
+   Data Access
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../publications.html">
+   Publications
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Chapters
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Geographic variation in energy rating
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="climatic-influence-plr.html">
+   Climatic influence on PLR uncertainty
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+<a href="https://github.com/sandialabs/pv-atlas"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="bottom"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/chapter/geographic-variation-energy-rating.rst.txt"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.rst</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#methodology">
+   Methodology
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#how-does-cser-vary-geographically">
+   How does CSER vary geographically?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-factors-drive-the-variation">
+   What factors drive the variation?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#references">
+   References
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-files">
+   Data files
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Geographic variation in energy rating</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#methodology">
+   Methodology
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#how-does-cser-vary-geographically">
+   How does CSER vary geographically?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-factors-drive-the-variation">
+   What factors drive the variation?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#references">
+   References
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-files">
+   Data files
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css"/>
+<link rel="stylesheet" href="https://unpkg.com/leaflet-sidebar-v2/css/leaflet-sidebar.css"/>
+<link rel="stylesheet" href="https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css"/>
+
+<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+<script src="https://unpkg.com/georaster"></script>
+<script src="https://unpkg.com/geotiff"></script>
+<script src="https://unpkg.com/chroma-js@2.4.2"></script>
+<script src="https://unpkg.com/georaster-layer-for-leaflet"></script>
+<script src="https://unpkg.com/geoblaze"></script>
+<script src="https://unpkg.com/leaflet-sidebar-v2"></script>
+<script src="https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+
+<script src="/pv-atlas/_static/map-widget.js"></script>
+
+<section id="geographic-variation-in-energy-rating">
+<h1>Geographic variation in energy rating<a class="headerlink" href="#geographic-variation-in-energy-rating" title="Permalink to this headline">#</a></h1>
+<p><em>Content contributed by Sandia National Laboratories</em></p>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h2>
+<p>PV modules convert light to electricity with an efficiency of roughly 20%,
+with the remainder being reflected from the module surface or converted to
+thermal energy inside the module.  However, the exact efficiency varies,
+both across modules (some module types are more efficient than others) and
+according to the operating conditions of the module.  Modules ratings are
+typically determined in the laboratory at standard test conditions (STC).
+However, when deployed outdoors, the operating conditions (light intensity,
+temperature, etc) often differ significantly from STC.  This means that efficiency
+ratings at STC often don’t represent module performance in real applications.</p>
+<p>One way of determining more realistic efficiency ratings is with a
+“climate-specific energy rating” (CSER) procedure.  As the name suggests,
+CSER represents how a module would perform in a given climate.  CSER is
+calculated as the ratio of overall outdoor efficiency to efficiency at STC:</p>
+<div class="math notranslate nohighlight">
+\[\text{CSER} = \frac{\text{Efficiency at operating conditions}}{\text{Efficiency at STC}}\]</div>
+<p>For example: a module with an STC efficiency of 20% and a CSER of 90% in a given
+location, would have an overall efficiency of 18% in that location (0.9 times 20).
+In another location with a CSER of 95%, it would have an overall efficiency
+of 19%.</p>
+<p>This chapter examines how CSER varies across climates, with the central
+question: <strong>how does module efficiency vary geographically, and what
+factors drive the variation?</strong></p>
+</section>
+<section id="methodology">
+<h2>Methodology<a class="headerlink" href="#methodology" title="Permalink to this headline">#</a></h2>
+<p>We consider modules corresponding to five PV technologies:</p>
+<table class="table">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 25%" />
+<col style="width: 11%" />
+<col style="width: 19%" />
+<col style="width: 31%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Module</p></th>
+<th class="head"><p>Cell type</p></th>
+<th class="head"><p>STC efficiency [%]</p></th>
+<th class="head"><p>Temperature coefficient [%/°C]</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>CSmono275</p></td>
+<td><p>Canadian Solar CS6K-275M</p></td>
+<td><p>Al-BSF</p></td>
+<td><p>16.9</p></td>
+<td><p>-0.415</p></td>
+</tr>
+<tr class="row-odd"><td><p>Qmono300</p></td>
+<td><p>Q Cells Q.PEAK-G4.1 300</p></td>
+<td><p>PERC</p></td>
+<td><p>17.4</p></td>
+<td><p>-0.403</p></td>
+</tr>
+<tr class="row-even"><td><p>LG320</p></td>
+<td><p>LG 320 N1K-A5</p></td>
+<td><p>N-PERT</p></td>
+<td><p>18.7</p></td>
+<td><p>-0.400</p></td>
+</tr>
+<tr class="row-odd"><td><p>Panasonic325</p></td>
+<td><p>Panasonic VBHN325SA 16</p></td>
+<td><p>HIT</p></td>
+<td><p>19.3</p></td>
+<td><p>-0.297</p></td>
+</tr>
+<tr class="row-even"><td><p>FSLRs4</p></td>
+<td><p>First Solar FS-4112-3</p></td>
+<td><p>CdTe</p></td>
+<td><p>16.4</p></td>
+<td><p>-0.297</p></td>
+</tr>
+</tbody>
+</table>
+<p>CSERs for each module are calculated according to the IEC 61853-3
+standard.  The standard defines a modeling workflow that
+accounts for the effects of spectral variation, operating temperature,
+absolute irradiance level, and reflection loss (IAM).
+To investigate the underlying sources of variation in CSER, we also
+compute CSER values where each of those four performance effects are held at
+their STC values instead of varying according to the climatic dataset.
+For example, IAM is kept at STC by setting it to 1.0 for all angles of incidence.
+Four aspects of performance are evaluated in this way: IAM, spectral mismatch (SMM),
+low-light response, and temperature response.  By computing CSER values with each
+of these effects “disabled” (i.e., held at the corresponding STC condition) and
+comparing with the baseline CSER where all effects are active, we can quantify
+each effect’s contribution to the overall CSER.</p>
+<p>We calculate CSER across the United States using solar resource and spectral
+irradiance data from the NSRDB PSM3 datasets for calendar year 2022.</p>
+<p>For full details on the simulation and analysis methodology,
+see <span id="id1">[<a class="reference internal" href="../publications.html#cite-1-anderson2025cser" title="Kevin Anderson, Joshua Stein, and Marios Theristis. Variation in photovoltaic energy rating and underlying drivers across modules and climates. IEEE Access, 2025. doi:10.1109/ACCESS.2025.3534678.">2</a>]</span>.</p>
+</section>
+<section id="how-does-cser-vary-geographically">
+<h2>How does CSER vary geographically?<a class="headerlink" href="#how-does-cser-vary-geographically" title="Permalink to this headline">#</a></h2>
+<p>The following map shows how CSER varies across the US.  Use the layer
+widget to view maps for other modules.</p>
+<div id="sidebar-0" class="leaflet-sidebar collapsed" style="bottom:300px; display:none">
+    <!-- Nav tabs -->
+    <div class="leaflet-sidebar-tabs">
+        <ul role="tablist"> <!-- top aligned tabs -->
+            <li><a href="#calculations-0" role="tab"><i class="fa-solid fa-calculator"></i></a></li>
+        </ul>
+    </div>
+ 
+    <!-- Tab panes -->
+    <div class="leaflet-sidebar-content">
+        <div class="leaflet-sidebar-pane" id="calculations-0">
+            <h1 class="leaflet-sidebar-header" style="color: #fff">
+              Calculations
+              <div class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></div>
+            </h1>
+            
+            <p>Calculate a new layer from the difference between two layers:</p>
+            
+            <p>Layer 1: <select id="select-layer1-0"></select></p>
+            <p>Layer 2: <select id="select-layer2-0"></select></p>
+            
+            <p>The calculated layer is available in the layer dropdown widget.</p>
+        </div>
+    </div>
+</div>
+
+<div id="map-0" style="height: 500px; width: 100%">loading...</div>
+<p><em id="map-caption-0" style="font-size:0.9em"></em></p>
+
+<script>
+  $(window).on('load', function() {
+      init("0", {"id": "0", "geotiffSpecs": [{"label": "CSmono275", "filename": "/pv-atlas/geotiffs/cser/CSER_CSmono275_US_2022.tiff"}, {"label": "Qmono300", "filename": "/pv-atlas/geotiffs/cser/CSER_Qmono300_US_2022.tiff"}, {"label": "LG320", "filename": "/pv-atlas/geotiffs/cser/CSER_LG320_US_2022.tiff"}, {"label": "Panasonic325", "filename": "/pv-atlas/geotiffs/cser/CSER_Panasonic325_US_2022.tiff"}, {"label": "FSLRs4", "filename": "/pv-atlas/geotiffs/cser/CSER_FSLRs4_US_2022.tiff"}], "colorscale_min": 90.0, "colorscale_max": 110.0, "colorscale_name": "RdBu", "colorscale_label_digits": 1, "short_description": "CSER [%]", "layers_title": "Module:"});
+  });
+</script>
+<p>The maps reveal several noteworthy facts:</p>
+<ol class="arabic simple">
+<li><p>CSER varies across CONUS from 86% to 103%.</p></li>
+<li><p>CSER is almost always less than 100%, meaning modules perform worse outdoors
+than their STC rating suggests.  The exception is in the upper midwest,
+where some modules’ CSER may exceed 100% by a small amount.</p></li>
+<li><p>Geographic trends are qualtitatively similar across modules.</p></li>
+<li><p>The FSLRs4 module has the highest CSER across all climates.</p></li>
+<li><p>Among the four silicon modules, which one has the highest CSER depends on the location.</p></li>
+</ol>
+</section>
+<section id="what-factors-drive-the-variation">
+<h2>What factors drive the variation?<a class="headerlink" href="#what-factors-drive-the-variation" title="Permalink to this headline">#</a></h2>
+<p>We now examine how each of the four performance factors (temperature, spectrum,
+reflection/IAM, and low light) contribute to the overall CSER.</p>
+<p>First, temperature.  In this analysis, “temperature” includes the effects
+of both the module’s temperature coefficient (<span class="math notranslate nohighlight">\(\gamma\)</span>) and Faiman
+thermal coefficients (<span class="math notranslate nohighlight">\(u_0\)</span>, <span class="math notranslate nohighlight">\(u_1\)</span>).  We see that temperature
+effects result in CSER deviations greater than 10%, and the deviations
+are nearly always negative.  Modules with larger temperature coefficients
+have larger deviations.  However, comparing Qmono300 with LG320 (which have
+nearly identical temperature coefficients), we see that the two Faiman coefficients
+also have meaningful effect on overall performance.</p>
+<div id="sidebar-1" class="leaflet-sidebar collapsed" style="bottom:300px; display:none">
+    <!-- Nav tabs -->
+    <div class="leaflet-sidebar-tabs">
+        <ul role="tablist"> <!-- top aligned tabs -->
+            <li><a href="#calculations-1" role="tab"><i class="fa-solid fa-calculator"></i></a></li>
+        </ul>
+    </div>
+ 
+    <!-- Tab panes -->
+    <div class="leaflet-sidebar-content">
+        <div class="leaflet-sidebar-pane" id="calculations-1">
+            <h1 class="leaflet-sidebar-header" style="color: #fff">
+              Calculations
+              <div class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></div>
+            </h1>
+            
+            <p>Calculate a new layer from the difference between two layers:</p>
+            
+            <p>Layer 1: <select id="select-layer1-1"></select></p>
+            <p>Layer 2: <select id="select-layer2-1"></select></p>
+            
+            <p>The calculated layer is available in the layer dropdown widget.</p>
+        </div>
+    </div>
+</div>
+
+<div id="map-1" style="height: 500px; width: 100%">loading...</div>
+<p><em id="map-caption-1" style="font-size:0.9em"></em></p>
+
+<script>
+  $(window).on('load', function() {
+      init("1", {"id": "1", "geotiffSpecs": [{"label": "CSmono275", "filename": "/pv-atlas/geotiffs/cser/Temperature_CSmono275_US_2022.tiff"}, {"label": "Qmono300", "filename": "/pv-atlas/geotiffs/cser/Temperature_Qmono300_US_2022.tiff"}, {"label": "LG320", "filename": "/pv-atlas/geotiffs/cser/Temperature_LG320_US_2022.tiff"}, {"label": "Panasonic325", "filename": "/pv-atlas/geotiffs/cser/Temperature_Panasonic325_US_2022.tiff"}, {"label": "FSLRs4", "filename": "/pv-atlas/geotiffs/cser/Temperature_FSLRs4_US_2022.tiff"}], "colorscale_min": -10.0, "colorscale_max": 10.0, "colorscale_name": "RdBu", "colorscale_label_digits": 1, "short_description": "Effect of temperature on CSER [%]", "layers_title": "Module:"});
+  });
+</script>
+<p>Next, spectrum.  The silicon modules see CSER differences from -2% in the arid
+and mountainous regions in the southwest to to +2% in the pacific northwest.
+In most of the country, the silicon modules see a small gain around 1%.  In
+contrast, the CdTe module sees differences from -2.5% to +5%, with a geographic
+pattern similar to that of the silicon modules.</p>
+<div id="sidebar-2" class="leaflet-sidebar collapsed" style="bottom:300px; display:none">
+    <!-- Nav tabs -->
+    <div class="leaflet-sidebar-tabs">
+        <ul role="tablist"> <!-- top aligned tabs -->
+            <li><a href="#calculations-2" role="tab"><i class="fa-solid fa-calculator"></i></a></li>
+        </ul>
+    </div>
+ 
+    <!-- Tab panes -->
+    <div class="leaflet-sidebar-content">
+        <div class="leaflet-sidebar-pane" id="calculations-2">
+            <h1 class="leaflet-sidebar-header" style="color: #fff">
+              Calculations
+              <div class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></div>
+            </h1>
+            
+            <p>Calculate a new layer from the difference between two layers:</p>
+            
+            <p>Layer 1: <select id="select-layer1-2"></select></p>
+            <p>Layer 2: <select id="select-layer2-2"></select></p>
+            
+            <p>The calculated layer is available in the layer dropdown widget.</p>
+        </div>
+    </div>
+</div>
+
+<div id="map-2" style="height: 500px; width: 100%">loading...</div>
+<p><em id="map-caption-2" style="font-size:0.9em"></em></p>
+
+<script>
+  $(window).on('load', function() {
+      init("2", {"id": "2", "geotiffSpecs": [{"label": "CSmono275", "filename": "/pv-atlas/geotiffs/cser/SMM_CSmono275_US_2022.tiff"}, {"label": "Qmono300", "filename": "/pv-atlas/geotiffs/cser/SMM_Qmono300_US_2022.tiff"}, {"label": "LG320", "filename": "/pv-atlas/geotiffs/cser/SMM_LG320_US_2022.tiff"}, {"label": "Panasonic325", "filename": "/pv-atlas/geotiffs/cser/SMM_Panasonic325_US_2022.tiff"}, {"label": "FSLRs4", "filename": "/pv-atlas/geotiffs/cser/SMM_FSLRs4_US_2022.tiff"}], "colorscale_min": -5.0, "colorscale_max": 5.0, "colorscale_name": "RdBu", "colorscale_label_digits": 1, "short_description": "Effect of spectrum on CSER [%]", "layers_title": "Module:"});
+  });
+</script>
+<p>Third, IAM.  IAM’s influence on CSER varies with location/climate much less
+than the previous effects.  The primary variation is with latitude, ranging
+from -1.2% in the south to 2.2% in the far north.  Only minor variation
+is visible according to terrain and other climatic effects.  Additionally,
+the advantageous IAM curve assumed for the FSLRs4 module cuts the
+reflection loss in half compared to the other modules.</p>
+<div id="sidebar-3" class="leaflet-sidebar collapsed" style="bottom:300px; display:none">
+    <!-- Nav tabs -->
+    <div class="leaflet-sidebar-tabs">
+        <ul role="tablist"> <!-- top aligned tabs -->
+            <li><a href="#calculations-3" role="tab"><i class="fa-solid fa-calculator"></i></a></li>
+        </ul>
+    </div>
+ 
+    <!-- Tab panes -->
+    <div class="leaflet-sidebar-content">
+        <div class="leaflet-sidebar-pane" id="calculations-3">
+            <h1 class="leaflet-sidebar-header" style="color: #fff">
+              Calculations
+              <div class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></div>
+            </h1>
+            
+            <p>Calculate a new layer from the difference between two layers:</p>
+            
+            <p>Layer 1: <select id="select-layer1-3"></select></p>
+            <p>Layer 2: <select id="select-layer2-3"></select></p>
+            
+            <p>The calculated layer is available in the layer dropdown widget.</p>
+        </div>
+    </div>
+</div>
+
+<div id="map-3" style="height: 500px; width: 100%">loading...</div>
+<p><em id="map-caption-3" style="font-size:0.9em"></em></p>
+
+<script>
+  $(window).on('load', function() {
+      init("3", {"id": "3", "geotiffSpecs": [{"label": "CSmono275", "filename": "/pv-atlas/geotiffs/cser/IAM_CSmono275_US_2022.tiff"}, {"label": "Qmono300", "filename": "/pv-atlas/geotiffs/cser/IAM_Qmono300_US_2022.tiff"}, {"label": "LG320", "filename": "/pv-atlas/geotiffs/cser/IAM_LG320_US_2022.tiff"}, {"label": "Panasonic325", "filename": "/pv-atlas/geotiffs/cser/IAM_Panasonic325_US_2022.tiff"}, {"label": "FSLRs4", "filename": "/pv-atlas/geotiffs/cser/IAM_FSLRs4_US_2022.tiff"}], "colorscale_min": -3.0, "colorscale_max": 3.0, "colorscale_name": "RdBu", "colorscale_label_digits": 1, "short_description": "Effect of IAM on CSER [%]", "layers_title": "Module:"});
+  });
+</script>
+<p>Finally, low-light conditions.  Here we see a large qualitative difference
+between modules, where the nonlinear responses of the CSmono275 and Panasonic325
+modules result in losses ranging from -0.3% to -1.5% depending on the location,
+while the other modules (which have a more linear response to light) show
+significantly smaller effects on CSER.  Sunny locations are less affected
+by low-light loss than cloudier locations are.</p>
+<div id="sidebar-4" class="leaflet-sidebar collapsed" style="bottom:300px; display:none">
+    <!-- Nav tabs -->
+    <div class="leaflet-sidebar-tabs">
+        <ul role="tablist"> <!-- top aligned tabs -->
+            <li><a href="#calculations-4" role="tab"><i class="fa-solid fa-calculator"></i></a></li>
+        </ul>
+    </div>
+ 
+    <!-- Tab panes -->
+    <div class="leaflet-sidebar-content">
+        <div class="leaflet-sidebar-pane" id="calculations-4">
+            <h1 class="leaflet-sidebar-header" style="color: #fff">
+              Calculations
+              <div class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></div>
+            </h1>
+            
+            <p>Calculate a new layer from the difference between two layers:</p>
+            
+            <p>Layer 1: <select id="select-layer1-4"></select></p>
+            <p>Layer 2: <select id="select-layer2-4"></select></p>
+            
+            <p>The calculated layer is available in the layer dropdown widget.</p>
+        </div>
+    </div>
+</div>
+
+<div id="map-4" style="height: 500px; width: 100%">loading...</div>
+<p><em id="map-caption-4" style="font-size:0.9em"></em></p>
+
+<script>
+  $(window).on('load', function() {
+      init("4", {"id": "4", "geotiffSpecs": [{"label": "CSmono275", "filename": "/pv-atlas/geotiffs/cser/Low_light_CSmono275_US_2022.tiff"}, {"label": "Qmono300", "filename": "/pv-atlas/geotiffs/cser/Low_light_Qmono300_US_2022.tiff"}, {"label": "LG320", "filename": "/pv-atlas/geotiffs/cser/Low_light_LG320_US_2022.tiff"}, {"label": "Panasonic325", "filename": "/pv-atlas/geotiffs/cser/Low_light_Panasonic325_US_2022.tiff"}, {"label": "FSLRs4", "filename": "/pv-atlas/geotiffs/cser/Low_light_FSLRs4_US_2022.tiff"}], "colorscale_min": -2.0, "colorscale_max": 2.0, "colorscale_name": "RdBu", "colorscale_label_digits": 1, "short_description": "Effect of low light on CSER [%]", "layers_title": "Module:"});
+  });
+</script>
+</section>
+<section id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">#</a></h2>
+<div class="docutils container" id="bibliography-1">
+<ol class="arabic simple" start="1">
+<li id="cite-1-anderson2025cser"><p>Kevin Anderson, Joshua Stein, and Marios Theristis. Variation in photovoltaic energy rating and underlying drivers across modules and climates. <em>IEEE Access</em>, 2025. <a class="reference external" href="https://doi.org/10.1109/ACCESS.2025.3534678">doi:10.1109/ACCESS.2025.3534678</a>.</p></li>
+</ol>
+</div>
+</section>
+<section id="data-files">
+<h2>Data files<a class="headerlink" href="#data-files" title="Permalink to this headline">#</a></h2>
+<p>The geographic datasets shown on this page are available in the GeoTIFF
+files listed below:</p>
+<table class="table">
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 73%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>GeoTIFF file</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="/pv-atlas/geotiffs/cser/CSER_CSmono275_US_2022.tiff"><img alt="/_static/thumbnails/geotiffs/cser/CSER_CSmono275_US_2022.png" src="../_images/CSER_CSmono275_US_20221.png" /></a></p></td>
+<td><p>Description: Overall climate-specific energy rating for the CSmono275 module.<p><a class="reference external" href="/pv-atlas/geotiffs/cser/CSER_CSmono275_US_2022.tiff"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;CSER_CSmono275_US_2022.tiff - [140.3 KiB]</a></p>
+</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="/pv-atlas/geotiffs/cser/CSER_FSLRs4_US_2022.tiff"><img alt="/_static/thumbnails/geotiffs/cser/CSER_FSLRs4_US_2022.png" src="../_images/CSER_FSLRs4_US_20221.png" /></a></p></td>
+<td><p>Description: Overall climate-specific energy rating for the FSLRs4 module.<p><a class="reference external" href="/pv-atlas/geotiffs/cser/CSER_FSLRs4_US_2022.tiff"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;CSER_FSLRs4_US_2022.tiff - [140.3 KiB]</a></p>
+</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="/pv-atlas/geotiffs/cser/CSER_LG320_US_2022.tiff"><img alt="/_static/thumbnails/geotiffs/cser/CSER_LG320_US_2022.png" src="../_images/CSER_LG320_US_20221.png" /></a></p></td>
+<td><p>Description: Overall climate-specific energy rating for the LG320 module.<p><a class="reference external" href="/pv-atlas/geotiffs/cser/CSER_LG320_US_2022.tiff"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;CSER_LG320_US_2022.tiff - [140.3 KiB]</a></p>
+</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="/pv-atlas/geotiffs/cser/CSER_Panasonic325_US_2022.tiff"><img alt="/_static/thumbnails/geotiffs/cser/CSER_Panasonic325_US_2022.png" src="../_images/CSER_Panasonic325_US_20221.png" /></a></p></td>
+<td><p>Description: Overall climate-specific energy rating for the Panasonic325 module.<p><a class="reference external" href="/pv-atlas/geotiffs/cser/CSER_Panasonic325_US_2022.tiff"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;CSER_Panasonic325_US_2022.tiff - [140.3 KiB]</a></p>
+</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="/pv-atlas/geotiffs/cser/CSER_Qmono300_US_2022.tiff"><img alt="/_static/thumbnails/geotiffs/cser/CSER_Qmono300_US_2022.png" src="../_images/CSER_Qmono300_US_20221.png" /></a></p></td>
+<td><p>Description: Overall climate-specific energy rating for the Qmono300 module.<p><a class="reference external" href="/pv-atlas/geotiffs/cser/CSER_Qmono300_US_2022.tiff"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;CSER_Qmono300_US_2022.tiff - [140.3 KiB]</a></p>
+</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="/pv-atlas/geotiffs/cser/IAM_CSmono275_US_2022.tiff"><img alt="/_static/thumbnails/geotiffs/cser/IAM_CSmono275_US_2022.png" src="../_images/IAM_CSmono275_US_20221.png" /></a></p></td>
+<td><p>Description: Effect of IAM on overall climate-specific energy rating, for the CSmono275 module.<p><a class="reference external" href="/pv-atlas/geotiffs/cser/IAM_CSmono275_US_2022.tiff"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;IAM_CSmono275_US_2022.tiff - [140.3 KiB]</a></p>
+</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="/pv-atlas/geotiffs/cser/IAM_FSLRs4_US_2022.tiff"><img alt="/_static/thumbnails/geotiffs/cser/IAM_FSLRs4_US_2022.png" src="../_images/IAM_FSLRs4_US_20221.png" /></a></p></td>
+<td><p>Description: Effect of IAM on overall climate-specific energy rating, for the FSLRs4 module.<p><a class="reference external" href="/pv-atlas/geotiffs/cser/IAM_FSLRs4_US_2022.tiff"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;IAM_FSLRs4_US_2022.tiff - [140.3 KiB]</a></p>
+</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="/pv-atlas/geotiffs/cser/IAM_LG320_US_2022.tiff"><img alt="/_static/thumbnails/geotiffs/cser/IAM_LG320_US_2022.png" src="../_images/IAM_LG320_US_20221.png" /></a></p></td>
+<td><p>Description: Effect of IAM on overall climate-specific energy rating, for the LG320 module.<p><a class="reference external" href="/pv-atlas/geotiffs/cser/IAM_LG320_US_2022.tiff"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;IAM_LG320_US_2022.tiff - [140.3 KiB]</a></p>
+</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="/pv-atlas/geotiffs/cser/IAM_Panasonic325_US_2022.tiff"><img alt="/_static/thumbnails/geotiffs/cser/IAM_Panasonic325_US_2022.png" src="../_images/IAM_Panasonic325_US_20221.png" /></a></p></td>
+<td><p>Description: Effect of IAM on overall climate-specific energy rating, for the Panasonic325 module.<p><a class="reference external" href="/pv-atlas/geotiffs/cser/IAM_Panasonic325_US_2022.tiff"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;IAM_Panasonic325_US_2022.tiff - [140.3 KiB]</a></p>
+</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="/pv-atlas/geotiffs/cser/IAM_Qmono300_US_2022.tiff"><img alt="/_static/thumbnails/geotiffs/cser/IAM_Qmono300_US_2022.png" src="../_images/IAM_Qmono300_US_20221.png" /></a></p></td>
+<td><p>Description: Effect of IAM on overall climate-specific energy rating, for the Qmono300 module.<p><a class="reference external" href="/pv-atlas/geotiffs/cser/IAM_Qmono300_US_2022.tiff"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;IAM_Qmono300_US_2022.tiff - [140.3 KiB]</a></p>
+</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="/pv-atlas/geotiffs/cser/Low_light_CSmono275_US_2022.tiff"><img alt="/_static/thumbnails/geotiffs/cser/Low_light_CSmono275_US_2022.png" src="../_images/Low_light_CSmono275_US_20221.png" /></a></p></td>
+<td><p>Description: Effect of Low light on overall climate-specific energy rating, for the CSmono275 module.<p><a class="reference external" href="/pv-atlas/geotiffs/cser/Low_light_CSmono275_US_2022.tiff"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;Low_light_CSmono275_US_2022.tiff - [140.3 KiB]</a></p>
+</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="/pv-atlas/geotiffs/cser/Low_light_FSLRs4_US_2022.tiff"><img alt="/_static/thumbnails/geotiffs/cser/Low_light_FSLRs4_US_2022.png" src="../_images/Low_light_FSLRs4_US_20221.png" /></a></p></td>
+<td><p>Description: Effect of Low light on overall climate-specific energy rating, for the FSLRs4 module.<p><a class="reference external" href="/pv-atlas/geotiffs/cser/Low_light_FSLRs4_US_2022.tiff"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;Low_light_FSLRs4_US_2022.tiff - [140.3 KiB]</a></p>
+</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="/pv-atlas/geotiffs/cser/Low_light_LG320_US_2022.tiff"><img alt="/_static/thumbnails/geotiffs/cser/Low_light_LG320_US_2022.png" src="../_images/Low_light_LG320_US_20221.png" /></a></p></td>
+<td><p>Description: Effect of Low light on overall climate-specific energy rating, for the LG320 module.<p><a class="reference external" href="/pv-atlas/geotiffs/cser/Low_light_LG320_US_2022.tiff"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;Low_light_LG320_US_2022.tiff - [140.3 KiB]</a></p>
+</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="/pv-atlas/geotiffs/cser/Low_light_Panasonic325_US_2022.tiff"><img alt="/_static/thumbnails/geotiffs/cser/Low_light_Panasonic325_US_2022.png" src="../_images/Low_light_Panasonic325_US_20221.png" /></a></p></td>
+<td><p>Description: Effect of Low light on overall climate-specific energy rating, for the Panasonic325 module.<p><a class="reference external" href="/pv-atlas/geotiffs/cser/Low_light_Panasonic325_US_2022.tiff"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;Low_light_Panasonic325_US_2022.tiff - [140.3 KiB]</a></p>
+</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="/pv-atlas/geotiffs/cser/Low_light_Qmono300_US_2022.tiff"><img alt="/_static/thumbnails/geotiffs/cser/Low_light_Qmono300_US_2022.png" src="../_images/Low_light_Qmono300_US_20221.png" /></a></p></td>
+<td><p>Description: Effect of Low light on overall climate-specific energy rating, for the Qmono300 module.<p><a class="reference external" href="/pv-atlas/geotiffs/cser/Low_light_Qmono300_US_2022.tiff"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;Low_light_Qmono300_US_2022.tiff - [140.3 KiB]</a></p>
+</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="/pv-atlas/geotiffs/cser/SMM_CSmono275_US_2022.tiff"><img alt="/_static/thumbnails/geotiffs/cser/SMM_CSmono275_US_2022.png" src="../_images/SMM_CSmono275_US_20221.png" /></a></p></td>
+<td><p>Description: Effect of SMM on overall climate-specific energy rating, for the CSmono275 module.<p><a class="reference external" href="/pv-atlas/geotiffs/cser/SMM_CSmono275_US_2022.tiff"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;SMM_CSmono275_US_2022.tiff - [140.3 KiB]</a></p>
+</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="/pv-atlas/geotiffs/cser/SMM_FSLRs4_US_2022.tiff"><img alt="/_static/thumbnails/geotiffs/cser/SMM_FSLRs4_US_2022.png" src="../_images/SMM_FSLRs4_US_20221.png" /></a></p></td>
+<td><p>Description: Effect of SMM on overall climate-specific energy rating, for the FSLRs4 module.<p><a class="reference external" href="/pv-atlas/geotiffs/cser/SMM_FSLRs4_US_2022.tiff"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;SMM_FSLRs4_US_2022.tiff - [140.3 KiB]</a></p>
+</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="/pv-atlas/geotiffs/cser/SMM_LG320_US_2022.tiff"><img alt="/_static/thumbnails/geotiffs/cser/SMM_LG320_US_2022.png" src="../_images/SMM_LG320_US_20221.png" /></a></p></td>
+<td><p>Description: Effect of SMM on overall climate-specific energy rating, for the LG320 module.<p><a class="reference external" href="/pv-atlas/geotiffs/cser/SMM_LG320_US_2022.tiff"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;SMM_LG320_US_2022.tiff - [140.3 KiB]</a></p>
+</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="/pv-atlas/geotiffs/cser/SMM_Panasonic325_US_2022.tiff"><img alt="/_static/thumbnails/geotiffs/cser/SMM_Panasonic325_US_2022.png" src="../_images/SMM_Panasonic325_US_20221.png" /></a></p></td>
+<td><p>Description: Effect of SMM on overall climate-specific energy rating, for the Panasonic325 module.<p><a class="reference external" href="/pv-atlas/geotiffs/cser/SMM_Panasonic325_US_2022.tiff"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;SMM_Panasonic325_US_2022.tiff - [140.3 KiB]</a></p>
+</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="/pv-atlas/geotiffs/cser/SMM_Qmono300_US_2022.tiff"><img alt="/_static/thumbnails/geotiffs/cser/SMM_Qmono300_US_2022.png" src="../_images/SMM_Qmono300_US_20221.png" /></a></p></td>
+<td><p>Description: Effect of SMM on overall climate-specific energy rating, for the Qmono300 module.<p><a class="reference external" href="/pv-atlas/geotiffs/cser/SMM_Qmono300_US_2022.tiff"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;SMM_Qmono300_US_2022.tiff - [140.3 KiB]</a></p>
+</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="/pv-atlas/geotiffs/cser/Temperature_CSmono275_US_2022.tiff"><img alt="/_static/thumbnails/geotiffs/cser/Temperature_CSmono275_US_2022.png" src="../_images/Temperature_CSmono275_US_20221.png" /></a></p></td>
+<td><p>Description: Effect of Temperature on overall climate-specific energy rating, for the CSmono275 module.<p><a class="reference external" href="/pv-atlas/geotiffs/cser/Temperature_CSmono275_US_2022.tiff"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;Temperature_CSmono275_US_2022.tiff - [140.3 KiB]</a></p>
+</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="/pv-atlas/geotiffs/cser/Temperature_FSLRs4_US_2022.tiff"><img alt="/_static/thumbnails/geotiffs/cser/Temperature_FSLRs4_US_2022.png" src="../_images/Temperature_FSLRs4_US_20221.png" /></a></p></td>
+<td><p>Description: Effect of Temperature on overall climate-specific energy rating, for the FSLRs4 module.<p><a class="reference external" href="/pv-atlas/geotiffs/cser/Temperature_FSLRs4_US_2022.tiff"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;Temperature_FSLRs4_US_2022.tiff - [140.3 KiB]</a></p>
+</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="/pv-atlas/geotiffs/cser/Temperature_LG320_US_2022.tiff"><img alt="/_static/thumbnails/geotiffs/cser/Temperature_LG320_US_2022.png" src="../_images/Temperature_LG320_US_20221.png" /></a></p></td>
+<td><p>Description: Effect of Temperature on overall climate-specific energy rating, for the LG320 module.<p><a class="reference external" href="/pv-atlas/geotiffs/cser/Temperature_LG320_US_2022.tiff"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;Temperature_LG320_US_2022.tiff - [140.3 KiB]</a></p>
+</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="/pv-atlas/geotiffs/cser/Temperature_Panasonic325_US_2022.tiff"><img alt="/_static/thumbnails/geotiffs/cser/Temperature_Panasonic325_US_2022.png" src="../_images/Temperature_Panasonic325_US_20221.png" /></a></p></td>
+<td><p>Description: Effect of Temperature on overall climate-specific energy rating, for the Panasonic325 module.<p><a class="reference external" href="/pv-atlas/geotiffs/cser/Temperature_Panasonic325_US_2022.tiff"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;Temperature_Panasonic325_US_2022.tiff - [140.3 KiB]</a></p>
+</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="/pv-atlas/geotiffs/cser/Temperature_Qmono300_US_2022.tiff"><img alt="/_static/thumbnails/geotiffs/cser/Temperature_Qmono300_US_2022.png" src="../_images/Temperature_Qmono300_US_20221.png" /></a></p></td>
+<td><p>Description: Effect of Temperature on overall climate-specific energy rating, for the Qmono300 module.<p><a class="reference external" href="/pv-atlas/geotiffs/cser/Temperature_Qmono300_US_2022.tiff"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;Temperature_Qmono300_US_2022.tiff - [140.3 KiB]</a></p>
+</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="../publications.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Publications</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="climatic-influence-plr.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Climatic influence on PLR uncertainty</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+      &copy; Copyright 2023-2024.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
