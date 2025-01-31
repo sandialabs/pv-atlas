@@ -2,8 +2,8 @@
 .. map-header::
 
 
-Climatic-specific energy rating
-===============================
+Geographic variation in energy rating
+=====================================
 
 *Content contributed by Sandia National Laboratories*
 
@@ -108,8 +108,8 @@ The maps reveal several noteworthy facts:
 5. Among the four silicon modules, which one has the highest CSER depends on the location.
 
 
-Why does CSER vary geographically?
-----------------------------------
+What factors drive the variation?
+---------------------------------
 
 We now examine how each of the four performance factors (temperature, spectrum,
 reflection/IAM, and low light) contribute to the overall CSER.
