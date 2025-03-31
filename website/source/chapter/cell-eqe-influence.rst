@@ -39,17 +39,17 @@ Methodology
 ----------
 EQE curves for each cell within each of 11 PV modules were measured by the Cell
 Measurement and Performance group at the National Renewable Energy Laboratory.
-These data are in conjunction with simulated meteorological data, including
+These data are in conjunction with one year of simulated 30-minute meteorological data, including
 spectral irradiance, spanning the contiguous United States at a resolution of
-around 2° longitude/latitude (around 20km) thus covering around 21,000
+around 0.2° longitude/latitude (around 20km) thus covering around 21,000
 individual locations.
 
 The PV devices studied cover a range of technologies, including
 monocrystalline silicon (monoSi) and polycrystalline silicon
 (polySi), and a range of cell architectures including Al-BSF (Aluminium Back
 Surface Field), IBC (Interdigitated Back Contact), PERC (Passivated Emitter
-and Rear Contact), PERT (Passivated Emitter Rear Totally Diffused), and HIT
-(Heterojunction with Intrinsic Thin Layer). IEC characterisation data as well
+and Rear Contact), PERT (Passivated Emitter Rear Totally Diffused), and SHJ
+(Silicon heterojunction). IEC 61853-1 characterisation data as well
 as STC and field performance reports of the modules can be found in XXXX.
 XX refer to data section or add references directly here? XX
 
