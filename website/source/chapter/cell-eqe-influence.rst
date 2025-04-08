@@ -49,61 +49,18 @@ monocrystalline silicon (monoSi) and polycrystalline silicon
 (polySi), and a range of cell architectures including Al-BSF (Aluminium Back
 Surface Field), IBC (Interdigitated Back Contact), PERC (Passivated Emitter
 and Rear Contact), PERT (Passivated Emitter Rear Totally Diffused), and SHJ
-(Silicon heterojunction). IEC 61853-1 characterisation data as well
-as STC and field performance reports of the modules can be found in XXXX.
-XX refer to data section or add references directly here? XX
-
-The spectral mismatch factor, $M$ is used to quantify the change in PV
-performance due to changes in the spectrum.  $M$ represents the ratio of the
-usable fraction (UF) of measured irradiance to the usable fraction of the
-reference irradiance XX IEC reference? XX, and is calculated using the spectral
-response (SR) and spectral irradiance data as follows:
-
-XX how much detail on the power model? XX
-
-The power output of a module with series-connected cells is driven by the
-cell with the lowest current, which can be determined by identifying the cell
-with the lowest $M$.  Assuming as simple PVWatts-style power model, with linear
-relationships between performance and temperature and irradiance, the module
-power can be computed as follows:
-
-XX just the final equation XX
-
-A more detailed derivation and explanation can be found in [X cite the paper].
+(Silicon heterojunction).
 
 To quantify the impact of intradmodule EQE variation on PV device performance,
-the real estimate of power (Equation X) is compared to an estimate of the ideal
-power in the absence of intramodule EQE variaton, i.e. all cells have the same
-spectral behaviour and thus the same spectral mismatch, $M_{mod}$. In this
-study, $M_{mod}$ is calculated using the mean EQE.  The power output of this
-idealistic PV module in which all cells operate at the same level, $P_2$, is
-calculated as follows:
-
-X
-
-Therefore, the power loss as a result of the cell EQE mismatch within a PV
-module is given by:
-
-XX
-
-where:
-
-XX
-
-The percentage power loss is given by:
-
-XX
+the output from the "worst cell" (lowest performance) is compared with that of
+a hypothetical average cell, determined from the mean cell EQE.
 
 The mean EQE curve is a useful approximation of the module EQE that a modeller
 may use to estimate module performance without the need to process multiple EQE
 curves and individual cell performances to determine which is driving the
-module performance under any given spectral irradiance condition. Using this
-definition, $P_{loss}$ gives an indication of the error incurred through this
-approximation. The definition of $M_{mod}$ in this model is flexible. In
-another example use case, a device manufacturer may be interested in defining
-$M_{mod}$ as the spectral mismatch of the cell that most frequently generates
-the highest output, in order to determine the potential energy gain if all
-cells were manufactured at that higher EQE level. 
+module performance under any given spectral irradiance condition.  The power
+loss calculation thus provides an indication of the error incurred through this
+approximation.
 
 Results
 -------
