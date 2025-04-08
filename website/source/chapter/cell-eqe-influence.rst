@@ -55,7 +55,7 @@ To quantify the impact of intradmodule EQE variation on PV device performance,
 the output from the "worst cell" (lowest performance) is compared with that of
 a hypothetical average cell, determined from the mean cell EQE.
 
-The mean EQE curve is a useful approximation of the module EQE that a modeller
+The mean EQE curve is a useful approximation of the module EQE that a modeler
 may use to estimate module performance without the need to process multiple EQE
 curves and individual cell performances to determine which is driving the
 module performance under any given spectral irradiance condition.  The power
@@ -67,12 +67,35 @@ Results
 
 How does the EQE vary between cells?
 -----------------------------------
+There are four forms of EQE variation among the devices, classified by this
+study as follows:
+
+#. Negligible
+#. Amplitude
+#. Wavelength
+#. Mixed
+
+The first type of variation is characterized by a tight distribution with a
+mean absolute deviation of between 1% and 3% that is largely independent of
+wavelength.  Examples include the CSPoly270 and Itek360 modules. The EQE
+variation for the Panasonic325 module is also independent of wavelength, but a
+significantly greater amplitude-dominant variation is present with a relatively
+stable MAD of around 5%.  This relatively uniform variation in EQE can be
+caused by a mixture of internal factors such as parasitic losses, and external
+factors such as reflection leading to variable illumination from cell to cell
+for each measurement.  The third category is characterized predominantly by
+wavelength-dependent variation, such as in the case of the Qpoly280 device. 
+Finally, devices such as the Mission300 module exhibit a mixture of
+wavelength-dependent and amplitude variation, thus falling into the fourth
+category.
 
 What is the impact on PV performance?
 -------------------------------------
 
+
 Does the performance impact vary seasonally or geographically?
 --------------------------------------------------------------
+
 
 References
 ----------
