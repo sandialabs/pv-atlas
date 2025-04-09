@@ -39,10 +39,10 @@ Methodology
 ----------
 EQE curves for each cell within each of 11 PV modules were measured by the Cell
 Measurement and Performance group at the National Renewable Energy Laboratory.
-These data are in conjunction with one year of simulated 30-minute meteorological data, including
-spectral irradiance, spanning the contiguous United States at a resolution of
-around 0.2° longitude/latitude (around 20km) thus covering around 21,000
-individual locations.
+These data are in conjunction with one year of simulated 30-minute
+meteorological data, including spectral irradiance, spanning the contiguous
+United States at a resolution of around 0.2° longitude/latitude (around 20km)
+thus covering around 21,000 individual locations.
 
 The PV devices studied cover a range of technologies, including
 monocrystalline silicon (monoSi) and polycrystalline silicon
