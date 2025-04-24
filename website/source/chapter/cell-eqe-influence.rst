@@ -106,6 +106,29 @@ of M.
 
 Does the performance impact vary seasonally or geographically?
 --------------------------------------------------------------
+Could the low annual ΔE be a result of month-to-month variations cancelling
+each other out? Taking the Mission300 module as an example, Figure X shows the
+monthly breakdown ΔE values.  The range in each month represents the range of
+ΔE across the contiguous USA while the triangle and horizontal bar represent
+the mean and median ΔE, respectively.  On a monthly scale, the energy
+difference is more significant.  The range from month to month is almost double
+the annual energy difference, with an approximately 50:50 split between
+positive and negative ΔE months.
+
+Since ΔE can be positive or negative, besides reducing the annualized ΔE, this
+phenomenon also indicates that the driving cell under the prevailing spectrum
+can yield both an energy gain or loss with respect to performance driven by the
+mean EQE cell in the absence of intramodule EQE variation.
+
+In terms of geography, ΔE has a range of 0.46% across all locations, which is
+over four times the annualized ΔE.  Another phenomenon related to location is
+the fact that the annual ΔE values are notably larger in the south/south east
+USA than in the western states. This effect is particularly significant in
+coastal states such as Florida, where the subtropical climate is driven by high
+levels of humidity that are known to increase the spectral influence on PV
+performance [X].
+
+
 
 
 References
