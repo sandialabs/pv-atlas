@@ -129,11 +129,20 @@ levels of humidity that are known to increase the spectral influence on PV
 performance [X].
 
 
+Discussion
+----------
+
+
 
 Conclusion
 ----------
+
+
+
 References
 ----------
+
+
 
 Data files
 ----------
