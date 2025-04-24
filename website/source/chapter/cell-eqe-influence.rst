@@ -91,6 +91,17 @@ category.
 
 What is the impact on PV performance?
 -------------------------------------
+Figure X shows the annual energy difference between the potential
+non-mismatched output, as determined by the mean EQE, and the realistic module
+output, as determined by the limiting cell. The overall energy difference, ΔE,
+is relatively low for all modules, rarely exceeding ±0.20%.  Nonetheless, there
+is a link between the scale of loss and the type of EQE variation.  Modules
+with greatest ΔE are also those whose intramodule EQE variation is
+characterized by a wavelength dependence (category 3) or mixed variation
+(category 4). Variation in amplitude is likely to result primarily from
+systematic measurement error, for example due to variable cell illumination,
+and its effect is removed through an inherent normalization in the calculation
+of M.
 
 
 Does the performance impact vary seasonally or geographically?
