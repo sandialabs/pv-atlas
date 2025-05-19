@@ -137,7 +137,14 @@ performance assessment applications such as capacity testing, which can last
 only a few days/weeks at any given time over the course of the year.
 
 Since the modules analyzed are new, one aspect to consider in future work is
-how these results may evolve over time. 
+how these results may evolve over time.  A direct correlation between
+wavelength-dependent cell-level EQE variation and increased energy losses is
+observed.  PV module degradation is typically nonuniform across a module's
+constituent cells, and different degradation modes can impact different
+wavelength regimes of the device EQE [X] [X].  Therefore, future studies should
+consider how nonuniform degradation and different degradation mechanisms may
+influence intramodule EQE variation and thus the energy losses reported in this
+work.
 
 
 Conclusion
