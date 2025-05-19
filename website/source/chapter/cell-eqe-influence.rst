@@ -149,6 +149,24 @@ work.
 
 Conclusion
 ----------
+Cell-level EQE data have been ananlysed to determine the scale and nature of
+intramodule EQE variation and the any associated mismatch power losses.  
+Overall, four categories of EQE variation have been identified: negligible
+variation, amplitude variation, wavelength-dependent variation, and mixed
+variation.  Amplitude variation is likely a result of systematic measurement
+error, but wavelength-dependent variation (shape fo the EQE curve) alters the
+spectral mismatch factor and, thus, determines the driving cell within the
+module.  On an annual timescale, comparing each module to its respective
+hypothetical counterpart that does not exhibit cell-level EQE variation, the
+difference in energy output is below approximately ±0.2%.  However, these
+energy losses suffered seasonal and geographical variation whereby on a
+month-to-month basis the energy difference can change by over four times the
+annualized difference, representing a range of almost 1%.  The seasonality
+of these results has implications for subannual PV performance applications
+such as capacity testing.  In future work, it will be important to consider how
+these results may evolve over time when the modules exposed outdoors.  It is
+possible that nonuniform degradation over a module's lifetime may exacerbate
+the energy losses reported in this work.
 
 
 
