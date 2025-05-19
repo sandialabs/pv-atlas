@@ -7,6 +7,7 @@ Impact of cell-to-cell EQE variation on power output
 
 Introduction
 ------------
+
 Cells in a PV module are typically connected in series, hence module
 performance is limited by the cell generating the lowest current.  Reduced cell
 performance can arise from manufacturing inconsistencies between cells, or
@@ -37,6 +38,7 @@ following questions are posed:
 
 Methodology
 ----------
+
 EQE curves for each cell within each of 11 PV modules were measured by the Cell
 Measurement and Performance group at the National Renewable Energy Laboratory.
 These data are analysed in conjunction with one year of simulated 30-minute
@@ -130,6 +132,7 @@ performance [X].
 
 Discussion
 ----------
+
 While the absolute annual ΔE is restricted to only around 0.1%–0.2%, on a
 montlhly basis the uncertainty due to cell-level EQE variation increases to
 almost 1%.  This increase in error has implications for subannual PV
@@ -149,6 +152,7 @@ work.
 
 Conclusion
 ----------
+
 Cell-level EQE data have been ananlysed to determine the scale and nature of
 intramodule EQE variation and the any associated mismatch power losses.  
 Overall, four categories of EQE variation have been identified: negligible
@@ -172,6 +176,11 @@ the energy losses reported in this work.
 
 References
 ----------
+
+.. bibliography::
+   :list: enumerated
+   :filter: False 
+
 
 
 
