@@ -15,7 +15,7 @@ module degradation.
 
 Previous studies have investigated how external envrionmental factors
 such as non-uniform shading can lead to reduced individual cell or module
-performance resulting in mismatch losses.  While manufacturing inconsistencies
+performance, resulting in mismatch losses.  While manufacturing inconsistencies
 between cells are often cited as a cause of intramodule mismatch losses, they
 are typically overlooked in the existing body of research.
 
@@ -28,7 +28,7 @@ level and its potential role as a driver of mismatch losses at the module
 level.  
 
 To investigate the role of cell-to-cell variation on module performance, the
-following questions are proposed:
+following questions are posed:
 
 #. How does the EQE vary between cells?
 #. What is the impact on PV performance?
@@ -39,20 +39,19 @@ Methodology
 ----------
 EQE curves for each cell within each of 11 PV modules were measured by the Cell
 Measurement and Performance group at the National Renewable Energy Laboratory.
-These data are in conjunction with one year of simulated 30-minute
+These data are analysed in conjunction with one year of simulated 30-minute
 meteorological data, including spectral irradiance, spanning the contiguous
-United States at a resolution of around 0.2° longitude/latitude (around 20km)
-thus covering around 21,000 individual locations.
+United States at a resolution of around 0.2° longitude/latitude (around 20km).
+At this resolution, the dataset covers around 21,000 individual locations.
 
-The PV devices studied cover a range of technologies, including
-monocrystalline silicon (monoSi) and polycrystalline silicon
-(polySi), and a range of cell architectures including Al-BSF (Aluminium Back
-Surface Field), IBC (Interdigitated Back Contact), PERC (Passivated Emitter
-and Rear Contact), PERT (Passivated Emitter Rear Totally Diffused), and SHJ
-(Silicon heterojunction).
+The PV devices studied cover a range of technologies, including monocrystalline
+silicon (monoSi) and polycrystalline silicon (polySi), and a range of cell
+architectures including Al-BSF (Aluminium Back Surface Field), IBC
+(Interdigitated Back Contact), PERC (Passivated Emitter and Rear Contact), PERT
+(Passivated Emitter Rear Totally Diffused), and SHJ (Silicon heterojunction).
 
 To quantify the impact of intradmodule EQE variation on PV device performance,
-the output from the "worst cell" (lowest performance) is compared with that of
+the output from the worst cell (lowest performance) is compared with that of
 a hypothetical average cell, determined from the mean cell EQE.
 
 The mean EQE curve is a useful approximation of the module EQE that a modeler
