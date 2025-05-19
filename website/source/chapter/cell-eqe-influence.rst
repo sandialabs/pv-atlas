@@ -127,7 +127,7 @@ the fact that the annual ΔE values are notably larger in the south/south east
 USA than in the western states. This effect is particularly significant in
 coastal states such as Florida, where the subtropical climate is driven by high
 levels of humidity that are known to increase the spectral influence on PV
-performance [X].
+performance :cite:`marion2014analysis`.
 
 
 Discussion
@@ -144,7 +144,8 @@ how these results may evolve over time.  A direct correlation between
 wavelength-dependent cell-level EQE variation and increased energy losses is
 observed.  PV module degradation is typically nonuniform across a module's
 constituent cells, and different degradation modes can impact different
-wavelength regimes of the device EQE [X] [X].  Therefore, future studies should
+wavelength regimes of the device EQE :cite:`wang2020influence`
+:cite:`yamaguchi2017degradation`.  Therefore, future studies should
 consider how nonuniform degradation and different degradation mechanisms may
 influence intramodule EQE variation and thus the energy losses reported in this
 work.
@@ -180,8 +181,10 @@ References
 .. bibliography::
    :list: enumerated
    :filter: False 
-
-
+   
+   marion2014analysis
+   wang2020influence
+   yamaguchi2017degradation
 
 
 Data files
