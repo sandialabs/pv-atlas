@@ -1,10 +1,9 @@
 
-.. map-header::
-
 
 Climatic influence on PLR uncertainty
 =====================================
 
+*Content contributed by Sandia National Laboratories*
 
 Introduction
 ------------
@@ -129,4 +128,7 @@ files listed below:
 
 .. geotiff-index::
     :pattern: geotiffs/synthetic-plr/*.tiff
+
+
+.. map-header::
 
