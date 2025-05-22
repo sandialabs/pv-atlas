@@ -88,9 +88,14 @@ for each measurement.  The third category is characterized predominantly by
 wavelength-dependent variation, such as in the case of the Qpoly280 device. 
 Finally, devices such as the Mission300 module exhibit a mixture of
 wavelength-dependent and amplitude variation, thus falling into the fourth
-category.  The cell-level EQE curves for all 11 modules are shown in Figure X.
+category.  The cell-level EQE curves for all 11 modules are shown in Figure 1.
 
-.. image:: _static/eqe_all_mean.png
+.. image:: ../_static/eqe_all_mean.png
+   :alt: Figure 1. Cell EQE, median EQE, and MAD for the PV devices.
+         (a) CSpoly270. (b) Itek360. (c) Jinko260. (d) LG320. (e) LG400.
+         (f) Mission300. (g) Panasonic325. (h) Qmono300. (i) Qpoly280.
+         (j) Solaria400. (k) Trina260.y foo diagram
+
 
 
 What is the impact on PV performance?
@@ -111,7 +116,7 @@ of M.
 Does the performance impact vary seasonally or geographically?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Could the low annual ΔE be a result of month-to-month variations cancelling
-each other out? Taking the Mission300 module as an example, Figure X shows the
+each other out? Taking the Mission300 module as an example, Figure 2 shows the
 monthly breakdown ΔE values.  The range in each month represents the range of
 ΔE across the contiguous USA while the triangle and horizontal bar represent
 the mean and median ΔE, respectively.  On a monthly scale, the energy
@@ -132,6 +137,22 @@ coastal states such as Florida, where the subtropical climate is driven by high
 levels of humidity that are known to increase the spectral influence on PV
 performance :cite:`marion2014analysis`.
 
+.. image:: ../_static/monthly-seasonality-boxplots.png
+   :alt: Figure 2. Seasonality breakdown for the 11 modules. Subplot (a)
+         presents the monthly energy difference, for each location, for the
+         Mission300 module. Subplot (b) shows the energy difference between the
+         minimum and maximum ΔE months, for each location, for all 11 modules.
+         In all plots, the horizontal bar represents the median, while the
+         triangle represents the mean.
+
+.. image:: ../_static/annual_energy_difference_heatmaps.png
+   :alt: Figure 3. Annual energy difference, ΔE , comparing P2 (mean EQE) and
+         P1 (limiting EQE) over the course of the year for all 11 modules
+         across the contiguous USA. Across all locations, the annualized ΔE is
+         typically no greater than ± 0.2%. Five modules experience an annual
+         energy loss, two experience an annual energy gain, and four exhibit no
+         significant annualized performance variation due to cell-level EQE
+         variation.
 
 Discussion
 ----------
