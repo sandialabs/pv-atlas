@@ -90,6 +90,11 @@ Finally, devices such as the Mission300 module exhibit a mixture of
 wavelength-dependent and amplitude variation, thus falling into the fourth
 category.  The cell-level EQE curves for all 11 modules are shown in Figure X.
 
+.. image:: source\_static\eqe_all_mean.pdf
+   :alt: Caption
+   :width: 50%
+   :align: center
+
 
 What is the impact on PV performance?
 -------------------------------------
