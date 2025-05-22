@@ -37,7 +37,7 @@ following questions are posed:
 
 
 Methodology
-----------
+-----------
 
 EQE curves for each cell within each of 11 PV modules were measured by the Cell
 Measurement and Performance group at the National Renewable Energy Laboratory.
@@ -67,7 +67,7 @@ Results
 -------
 
 How does the EQE vary between cells?
------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 There are four forms of EQE variation among the devices, classified by this
 study as follows:
 
@@ -97,7 +97,7 @@ category.  The cell-level EQE curves for all 11 modules are shown in Figure X.
 
 
 What is the impact on PV performance?
--------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Figure X shows the annual energy difference between the potential
 non-mismatched output, as determined by the mean EQE, and the realistic module
 output, as determined by the limiting cell. The overall energy difference, ΔE,
@@ -112,7 +112,7 @@ of M.
 
 
 Does the performance impact vary seasonally or geographically?
---------------------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Could the low annual ΔE be a result of month-to-month variations cancelling
 each other out? Taking the Mission300 module as an example, Figure X shows the
 monthly breakdown ΔE values.  The range in each month represents the range of
