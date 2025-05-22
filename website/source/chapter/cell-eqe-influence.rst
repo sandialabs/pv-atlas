@@ -88,7 +88,8 @@ for each measurement.  The third category is characterized predominantly by
 wavelength-dependent variation, such as in the case of the Qpoly280 device. 
 Finally, devices such as the Mission300 module exhibit a mixture of
 wavelength-dependent and amplitude variation, thus falling into the fourth
-category.
+category.  The cell-level EQE curves for all 11 modules are shown in Figure X.
+
 
 What is the impact on PV performance?
 -------------------------------------
@@ -172,7 +173,6 @@ such as capacity testing.  In future work, it will be important to consider how
 these results may evolve over time when the modules exposed outdoors.  It is
 possible that nonuniform degradation over a module's lifetime may exacerbate
 the energy losses reported in this work.
-
 
 
 References
