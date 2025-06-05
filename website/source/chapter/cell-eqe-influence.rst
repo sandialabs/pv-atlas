@@ -147,8 +147,8 @@ levels of humidity that are known to increase the spectral influence on PV
 performance :cite:`marion2014analysis`.
 
 .. map-widget:: 
-   :colorscale_min: 90
-   :colorscale_max: 110
+   :colorscale_min: -1
+   :colorscale_max: +1
    :colorscale_name: RdBu
    :short_description: Ediff [%]
    :layers_title: Module:
