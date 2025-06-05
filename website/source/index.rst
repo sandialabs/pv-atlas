@@ -25,7 +25,7 @@ Acknowledgement
 
 This material is based upon work supported by the U.S. Department of
 Energy's Office of Energy Efficiency and Renewable Energy (EERE) under
-the Solar Energy Technologies Office Award Number 38267.
+the Solar Energy Technologies Office Award Numbers 52776 and 38267.
 
 Free and open-source software is a key enabler of modern scientific computing.
 This project uses many open-source software packages, including:

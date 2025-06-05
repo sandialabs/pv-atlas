@@ -5,6 +5,8 @@
 Impact of cell-to-cell EQE variation on power output
 ====================================================
 
+*Content contributed by National Renewable Energy Laboratory*
+
 Introduction
 ------------
 
@@ -150,7 +152,7 @@ performance :cite:`marion2014analysis`.
    :colorscale_min: -1
    :colorscale_max: +1
    :colorscale_name: RdBu
-   :short_description: Ediff [%]
+   :short_description: ΔE [%]
    :layers_title: Module:
 
     cell-level-smm/CSmono275_annual_US_2022.tiff : CSmono275
@@ -218,6 +220,7 @@ these results may evolve over time when the modules exposed outdoors.  It is
 possible that nonuniform degradation over a module's lifetime may exacerbate
 the energy losses reported in this work.
 
+The full study may be found in Reference :cite:`Daxini2025photovoltaic`.
 
 References
 ----------
@@ -229,7 +232,12 @@ References
    marion2014analysis
    wang2020influence
    yamaguchi2017degradation
-
+   Daxini2025photovoltaic
 
 Data files
 ----------
+The geographic datasets shown on this page are available in the GeoTIFF
+files listed below:
+
+.. geotiff-index::
+    :pattern: geotiffs/cell-level-smm/*.tiff
