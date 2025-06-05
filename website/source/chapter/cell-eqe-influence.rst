@@ -146,8 +146,27 @@ coastal states such as Florida, where the subtropical climate is driven by high
 levels of humidity that are known to increase the spectral influence on PV
 performance :cite:`marion2014analysis`.
 
-.. Figure:: ../_static/annual_energy_difference_heatmaps.png
+.. map-widget:: 
+   :colorscale_min: 90
+   :colorscale_max: 110
+   :colorscale_name: RdBu
+   :short_description: Ediff [%]
+   :layers_title: Module:
 
+    cell-level-smm/CSmono275_annual_US_2022.tiff : CSmono275
+    cell-level-smm/CSpoly270_annual_US_2022.tiff : CSpoly270
+    cell-level-smm/Itek360_annual_US_2022.tiff : Itek360
+    cell-level-smm/Jinko260_annual_US_2022.tiff : Jinko260
+    cell-level-smm/LG320_annual_US_2022.tiff : LG320
+    cell-level-smm/LG400_annual_US_2022.tiff : LG400
+    cell-level-smm/Mission300_annual_US_2022.tiff : Mission300
+    cell-level-smm/Panasonic325_annual_US_2022.tiff : Panasonic325
+    cell-level-smm/Qpoly280_annual_US_2022.tiff : Qpoly280
+    cell-level-smm/Qmono300_annual_US_2022.tiff : Qmono300
+    cell-level-smm/Solaria400_annual_US_2022.tiff : Solaria400
+    cell-level-smm/Trina260_annual_US_2022.tiff : Trina260
+
+    
 Figure 3. Annual energy difference, ΔE , comparing P2 (mean EQE) and
 P1 (limiting EQE) over the course of the year for all 11 modules
 across the contiguous USA. Across all locations, the annualized ΔE is
