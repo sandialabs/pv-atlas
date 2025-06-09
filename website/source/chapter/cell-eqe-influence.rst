@@ -54,7 +54,7 @@ architectures including Al-BSF (Aluminium Back Surface Field), IBC
 (Interdigitated Back Contact), PERC (Passivated Emitter and Rear Contact), PERT
 (Passivated Emitter Rear Totally Diffused), and SHJ (Silicon heterojunction).
 
-To quantify the impact of intradmodule EQE variation on PV device performance,
+To quantify the impact of intramodule EQE variation on PV device performance,
 the output from the worst cell (lowest performance) is compared with that of
 a hypothetical average cell, determined from the mean cell EQE.
 
