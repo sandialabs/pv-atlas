@@ -97,7 +97,7 @@ category.  The cell-level EQE curves for all 11 modules are shown in Figure 1.
 Figure 1. Cell EQE, median EQE, and MAD for the PV devices.
 (a) CSpoly270. (b) Itek360. (c) Jinko260. (d) LG320. (e) LG400.
 (f) Mission300. (g) Panasonic325. (h) Qmono300. (i) Qpoly280.
-(j) Solaria400. (k) Trina260.y foo diagram
+(j) Solaria400. (k) Trina260.
 
 
 
@@ -181,7 +181,7 @@ Discussion
 ----------
 
 While the absolute annual ΔE is restricted to only around 0.1%–0.2%, on a
-montlhly basis the uncertainty due to cell-level EQE variation increases to
+monthly basis the uncertainty due to cell-level EQE variation increases to
 almost 1%.  This increase in error has implications for subannual PV
 performance assessment applications such as capacity testing, which can last
 only a few days/weeks at any given time over the course of the year.
