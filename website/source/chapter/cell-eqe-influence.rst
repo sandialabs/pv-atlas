@@ -82,15 +82,16 @@ The first type of variation is characterized by a tight distribution with a
 mean absolute deviation of between 1% and 3% that is largely independent of
 wavelength.  Examples include the CSPoly270 and Itek360 modules. The EQE
 variation for the Panasonic325 module is also independent of wavelength, but a
-significantly greater amplitude-dominant variation is present with a relatively
-stable MAD of around 5%.  This relatively uniform variation in EQE can be
-caused by a mixture of internal factors such as parasitic losses, and external
-factors such as reflection leading to variable illumination from cell to cell
-for each measurement.  The third category is characterized predominantly by
-wavelength-dependent variation, such as in the case of the Qpoly280 device. 
-Finally, devices such as the Mission300 module exhibit a mixture of
-wavelength-dependent and amplitude variation, thus falling into the fourth
-category.  The cell-level EQE curves for all 11 modules are shown in Figure 1.
+significantly greater amplitude-dominant variation is present with a
+relatively stable MAD of around 5%.  This relatively uniform variation in EQE
+can be caused by a mixture of internal factors such as parasitic losses, and
+external factors such as reflection leading to variable illumination from cell
+to cell for each measurement.  The third category is characterized
+predominantly by wavelength-dependent variation, such as in the case of the
+Qpoly280 device. Finally, devices such as the Mission300 module exhibit a
+mixture of wavelength-dependent and amplitude variation, thus falling into the
+fourth category.  The cell-level EQE curves for all 11 modules are shown in
+Figure 1.
 
 .. figure:: ../_static/eqe_all_mean.png
 
@@ -106,9 +107,9 @@ What is the impact on PV performance?
 Figure 2 shows the annual energy difference between the potential
 non-mismatched output, as determined by the mean EQE, and the realistic module
 output, as determined by the limiting cell. The overall energy difference, ΔE,
-is relatively low for all modules, rarely exceeding ±0.20%.  Nonetheless, there
-is a link between the scale of loss and the type of EQE variation.  Modules
-with greatest ΔE are also those whose intramodule EQE variation is
+is relatively low for all modules, rarely exceeding ±0.20%.  Nonetheless,
+there is a link between the scale of loss and the type of EQE variation.  
+Modules with greatest ΔE are also those whose intramodule EQE variation is
 characterized by a wavelength dependence (category 3) or mixed variation
 (category 4). Variation in amplitude is likely to result primarily from
 systematic measurement error, for example due to variable cell illumination,
@@ -131,22 +132,29 @@ each other out? Taking the Mission300 module as an example, Figure 2 shows the
 monthly breakdown ΔE values.  The range in each month represents the range of
 ΔE across the contiguous USA while the triangle and horizontal bar represent
 the mean and median ΔE, respectively.  On a monthly scale, the energy
-difference is more significant.  The range from month to month is almost double
-the annual energy difference, with an approximately 50:50 split between
+difference is more significant.  The range from month to month is almost
+double the annual energy difference, with an approximately 50:50 split between
 positive and negative ΔE months.
 
 Since ΔE can be positive or negative, besides reducing the annualized ΔE, this
 phenomenon also indicates that the driving cell under the prevailing spectrum
-can yield both an energy gain or loss with respect to performance driven by the
-mean EQE cell in the absence of intramodule EQE variation.
+can yield both an energy gain or loss with respect to performance driven by
+the mean EQE cell in the absence of intramodule EQE variation.
 
 In terms of geography, ΔE has a range of 0.46% across all locations, which is
 over four times the annualized ΔE.  Another phenomenon related to location is
 the fact that the annual ΔE values are notably larger in the south/south east
 USA than in the western states. This effect is particularly significant in
-coastal states such as Florida, where the subtropical climate is driven by high
-levels of humidity that are known to increase the spectral influence on PV
-performance :cite:`marion2014analysis`.
+coastal states such as Florida, where the subtropical climate is driven by
+high levels of humidity that are known to increase the spectral influence on
+PV performance :cite:`marion2014analysis`.
+
+Figure 3 presents the energy difference data, across the contiguous US, for a
+sample of four of the 11 modules, which each represent one of the four
+identified categories of cell-level EQE variation.  These are the Itek360
+(negligible) module, Panasonic325 (amplitude) module, Qpoly280 (wavelength)
+module, and the Mission300 (mixed) module.  Data for all 11 modules can be
+found at the end of this webpage.
 
 .. map-widget:: 
    :colorscale_min: -1
@@ -155,27 +163,18 @@ performance :cite:`marion2014analysis`.
    :short_description: ΔE [%]
    :layers_title: Module:
 
-    cell-level-smm/CSmono275_annual_US_2022.tiff : CSmono275
-    cell-level-smm/CSpoly270_annual_US_2022.tiff : CSpoly270
     cell-level-smm/Itek360_annual_US_2022.tiff : Itek360
-    cell-level-smm/Jinko260_annual_US_2022.tiff : Jinko260
-    cell-level-smm/LG320_annual_US_2022.tiff : LG320
-    cell-level-smm/LG400_annual_US_2022.tiff : LG400
-    cell-level-smm/Mission300_annual_US_2022.tiff : Mission300
     cell-level-smm/Panasonic325_annual_US_2022.tiff : Panasonic325
     cell-level-smm/Qpoly280_annual_US_2022.tiff : Qpoly280
-    cell-level-smm/Qmono300_annual_US_2022.tiff : Qmono300
-    cell-level-smm/Solaria400_annual_US_2022.tiff : Solaria400
-    cell-level-smm/Trina260_annual_US_2022.tiff : Trina260
+    cell-level-smm/Mission300_annual_US_2022.tiff : Mission300
 
-    
     Figure 3. Annual energy difference, ΔE , comparing P2 (mean EQE) and
-    P1 (limiting EQE) over the course of the year for all 11 modules
+    P1 (limiting EQE) over the course of the year for four sample modules
     across the contiguous USA. Across all locations, the annualized ΔE is
-    typically no greater than ± 0.2%. Five modules experience an annual
-    energy loss, two experience an annual energy gain, and four exhibit no
-    significant annualized performance variation due to cell-level EQE
-    variation.
+    typically no greater than ± 0.2%. Of all 11 modules, five modules
+    experience an annual energy loss, two experience an annual energy gain,
+    and four exhibit no significant annualized performance variation due to
+    cell-level EQE variation.
 
 Discussion
 ----------
@@ -194,8 +193,8 @@ constituent cells, and different degradation modes can impact different
 wavelength regimes of the device EQE :cite:`wang2020influence`
 :cite:`yamaguchi2017degradation`.  Therefore, future studies should
 consider how nonuniform degradation and different degradation mechanisms may
-influence intramodule EQE variation and thus the energy losses reported in this
-work.
+influence intramodule EQE variation and thus the energy losses reported in
+this work.
 
 
 Conclusion
@@ -215,10 +214,10 @@ energy losses suffered seasonal and geographical variation whereby on a
 month-to-month basis the energy difference can change by over four times the
 annualized difference, representing a range of almost 1%.  The seasonality
 of these results has implications for subannual PV performance applications
-such as capacity testing.  In future work, it will be important to consider how
-these results may evolve over time when the modules exposed outdoors.  It is
-possible that nonuniform degradation over a module's lifetime may exacerbate
-the energy losses reported in this work.
+such as capacity testing.  In future work, it will be important to consider
+how these results may evolve over time when the modules exposed outdoors.  It
+is possible that nonuniform degradation over a module's lifetime may
+exacerbate the energy losses reported in this work.
 
 The full study may be found in Reference :cite:`Daxini2025photovoltaic`.
 
