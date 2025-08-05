@@ -2,10 +2,11 @@
 Publications
 ============
 
-This page lists publications from the PV Atlas project.
+This page lists publications that used PV Atlas capabilities.
 
 .. bibliography::
 
+   Cooper2025backtracking
    Anderson2025cser
    Anderson2024pvpmcslc
    Theristis2023srrl
