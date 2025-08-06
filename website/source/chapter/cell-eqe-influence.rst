@@ -117,10 +117,9 @@ and its effect is removed through an inherent normalization in the calculation
 of M.
 
 .. figure:: ../_static/monthly-seasonality-boxplots.png
-    The boxplot shows the monthly energy difference, for each location, for the
-    Mission300 module.  The Mission300 exhibits category 4 (mixed) cell-to-cell EQE
-    variation, resulting in one of the largest energy differences both on a monthly and
-    annual scale.
+    The monthly energy difference for the Mission300 module.  The Mission300 exhibits
+    category 4 (mixed) cell-to-cell EQE variation, resulting in one of the largest
+    energy differences both on a monthly and annual scale.
 
 
 
@@ -128,15 +127,16 @@ Does the performance impact vary seasonally or geographically?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Could the low annual ΔE be a result of month-to-month variations cancelling
 each other out? The monthly breakdown of ΔE values shown in Figure 2 for the Mission300
-module provides some insight into this.  The range in each month represents the range of
+module provide some insight into this.  The range in each month represents the range of
 ΔE across the contiguous USA while the triangle and horizontal bar represent
 the mean and median ΔE, respectively.  On a monthly scale, the energy
-difference is more significant.  The range from month to month is almost
-double the annual energy difference, with an approximately 50:50 split between
-positive and negative ΔE months. Figure 3 presents the remaining results in a different
-form, for all modules.  The boxplots in Figure 3 represent illustrate the seasonality
-in ΔE, calculated for the whole year as the difference between the maximum ΔE month and
-the minimum ΔE month.
+difference is more significant than on an annual basis.  The range from month to month
+is almost double the annual energy difference, with an approximately 50:50 split between
+positive and negative ΔE months.
+
+Figure 3 presents the remaining results in a different form, for all modules.  The
+boxplots in Figure 3 illustrate the seasonality in ΔE, calculated for the whole year as
+the difference between the maximum ΔE month and the minimum ΔE month.
 
 Since ΔE can be positive or negative, besides reducing the annualized ΔE, this
 phenomenon also indicates that the driving cell under the prevailing spectrum
