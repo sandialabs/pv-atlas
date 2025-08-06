@@ -169,8 +169,8 @@ module, and the Mission300 (mixed) module.  Data for all 11 modules can be
 found at the end of this webpage.
 
 .. map-widget:: 
-   :colorscale_min: -1
-   :colorscale_max: +1
+   :colorscale_min: -0.2
+   :colorscale_max: +0.2
    :colorscale_name: RdBu
    :short_description: ΔE [%]
    :layers_title: Module:
