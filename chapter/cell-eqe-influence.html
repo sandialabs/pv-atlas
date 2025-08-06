@@ -1,0 +1,769 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Impact of cell-to-cell EQE variation on power output &#8212; PV Atlas</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Climatic influence on PLR uncertainty" href="climatic-influence-plr.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">PV Atlas</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  About
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../index.html">
+   About PV Atlas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../methodology.html">
+   Methodology
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../data.html">
+   Data Access
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../publications.html">
+   Publications
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Chapters
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="geographic-variation-energy-rating.html">
+   Geographic variation in energy rating
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="climatic-influence-plr.html">
+   Climatic influence on PLR uncertainty
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Impact of cell-to-cell EQE variation on power output
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+<a href="https://github.com/sandialabs/pv-atlas"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="bottom"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/chapter/cell-eqe-influence.rst.txt"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.rst</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#methodology">
+   Methodology
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#results">
+   Results
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#how-does-the-eqe-vary-between-cells">
+     How does the EQE vary between cells?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-is-the-impact-on-pv-performance">
+     What is the impact on PV performance?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#does-the-performance-impact-vary-seasonally-or-geographically">
+     Does the performance impact vary seasonally or geographically?
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#discussion">
+   Discussion
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conclusion">
+   Conclusion
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#references">
+   References
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-files">
+   Data files
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Impact of cell-to-cell EQE variation on power output</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#methodology">
+   Methodology
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#results">
+   Results
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#how-does-the-eqe-vary-between-cells">
+     How does the EQE vary between cells?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-is-the-impact-on-pv-performance">
+     What is the impact on PV performance?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#does-the-performance-impact-vary-seasonally-or-geographically">
+     Does the performance impact vary seasonally or geographically?
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#discussion">
+   Discussion
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conclusion">
+   Conclusion
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#references">
+   References
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-files">
+   Data files
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css"/>
+<link rel="stylesheet" href="https://unpkg.com/leaflet-sidebar-v2/css/leaflet-sidebar.css"/>
+<link rel="stylesheet" href="https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css"/>
+
+<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+<script src="https://unpkg.com/georaster"></script>
+<script src="https://unpkg.com/geotiff"></script>
+<script src="https://unpkg.com/chroma-js@2.4.2"></script>
+<script src="https://unpkg.com/georaster-layer-for-leaflet"></script>
+<script src="https://unpkg.com/geoblaze"></script>
+<script src="https://unpkg.com/leaflet-sidebar-v2"></script>
+<script src="https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+
+<script src="/pv-atlas/_static/map-widget.js"></script>
+
+<section id="impact-of-cell-to-cell-eqe-variation-on-power-output">
+<h1>Impact of cell-to-cell EQE variation on power output<a class="headerlink" href="#impact-of-cell-to-cell-eqe-variation-on-power-output" title="Permalink to this headline">#</a></h1>
+<p><em>Content contributed by National Renewable Energy Laboratory</em></p>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h2>
+<p>Cells in a PV module are typically connected in series, hence module
+performance is limited by the cell generating the lowest current.  Reduced cell
+performance can arise from manufacturing inconsistencies between cells, or
+in-operando events such as localised temperature hotspots and non-uniform
+module degradation.</p>
+<p>Previous studies have investigated how external envrionmental factors
+such as non-uniform shading can lead to reduced individual cell or module
+performance, resulting in mismatch losses.  While manufacturing inconsistencies
+between cells are often cited as a cause of intramodule mismatch losses, they
+are typically overlooked in the existing body of research.</p>
+<p>One way to study the inherent differences between cells is through analyzing
+their external quantum efficiency (EQE).  A cell’s EQE curve represents the
+efficiency with which incident photons of different wavelengths generate a
+photocurrent.  Although this spectral effect on PV performance has been studied
+at the module level, no studies have analysed the spectral effect at the cell
+level and its potential role as a driver of mismatch losses at the module
+level.</p>
+<p>To investigate the role of cell-to-cell variation on module performance, the
+following questions are posed:</p>
+<ol class="arabic simple">
+<li><p>How does the EQE vary between cells?</p></li>
+<li><p>What is the impact on PV performance?</p></li>
+<li><p>Does the performance impact vary seasonally or geographically?</p></li>
+</ol>
+</section>
+<section id="methodology">
+<h2>Methodology<a class="headerlink" href="#methodology" title="Permalink to this headline">#</a></h2>
+<p>EQE curves for each cell within each of 11 PV modules were measured by the Cell
+Measurement and Performance group at the National Renewable Energy Laboratory.
+These data are analysed in conjunction with one year of simulated 30-minute
+meteorological data, including spectral irradiance, spanning the contiguous
+United States at a resolution of around 0.2° longitude/latitude (around 20km).
+At this resolution, the dataset covers around 21,000 individual locations.</p>
+<p>The PV devices studied cover a range of technologies, including monocrystalline
+silicon (monoSi) and polycrystalline silicon (polySi), and a range of cell
+architectures including Al-BSF (Aluminium Back Surface Field), IBC
+(Interdigitated Back Contact), PERC (Passivated Emitter and Rear Contact), PERT
+(Passivated Emitter Rear Totally Diffused), and SHJ (Silicon heterojunction).</p>
+<p>To quantify the impact of intramodule EQE variation on PV device performance,
+the output from the worst cell (lowest performance) is compared with that of
+a hypothetical average cell, determined from the mean cell EQE.</p>
+<p>The mean EQE curve is a useful approximation of the module EQE that a modeler
+may use to estimate module performance without the need to process multiple EQE
+curves and individual cell performances to determine which is driving the
+module performance under any given spectral irradiance condition.  The power
+loss calculation thus provides an indication of the error incurred through this
+approximation.</p>
+</section>
+<section id="results">
+<h2>Results<a class="headerlink" href="#results" title="Permalink to this headline">#</a></h2>
+<section id="how-does-the-eqe-vary-between-cells">
+<h3>How does the EQE vary between cells?<a class="headerlink" href="#how-does-the-eqe-vary-between-cells" title="Permalink to this headline">#</a></h3>
+<p>There are four forms of EQE variation among the devices, classified by this
+study as follows:</p>
+<ol class="arabic simple">
+<li><p>Negligible</p></li>
+<li><p>Amplitude</p></li>
+<li><p>Wavelength</p></li>
+<li><p>Mixed</p></li>
+</ol>
+<p>The first type of variation is characterized by a tight distribution with a
+mean absolute deviation of between 1% and 3% that is largely independent of
+wavelength.  Examples include the CSPoly270 and Itek360 modules. The EQE
+variation for the Panasonic325 module is also independent of wavelength, but a
+significantly greater amplitude-dominant variation is present with a
+relatively stable MAD of around 5%.  This relatively uniform variation in EQE
+can be caused by a mixture of internal factors such as parasitic losses, and
+external factors such as reflection leading to variable illumination from cell
+to cell for each measurement.  The third category is characterized
+predominantly by wavelength-dependent variation, such as in the case of the
+Qpoly280 device. Finally, devices such as the Mission300 module exhibit a
+mixture of wavelength-dependent and amplitude variation, thus falling into the
+fourth category.  The cell-level EQE curves for all 11 modules are shown in
+Figure 1.</p>
+<figure class="align-default" id="id1">
+<img alt="../_images/eqe_all_mean.png" src="../_images/eqe_all_mean.png" />
+<figcaption>
+<p><span class="caption-text">Figure 1. Cell EQE, median EQE, and MAD for the PV devices.
+(a) CSpoly270. (b) Itek360. (c) Jinko260. (d) LG320. (e) LG400.
+(f) Mission300. (g) Panasonic325. (h) Qmono300. (i) Qpoly280.
+(j) Solaria400. (k) Trina260.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="what-is-the-impact-on-pv-performance">
+<h3>What is the impact on PV performance?<a class="headerlink" href="#what-is-the-impact-on-pv-performance" title="Permalink to this headline">#</a></h3>
+<p>Figure 2 shows the annual energy difference between the potential
+non-mismatched output, as determined by the mean EQE, and the realistic module
+output, as determined by the limiting cell. The data presented are for the Mission300
+module, as an example. The overall energy difference, ΔE, is relatively low for all
+modules, rarely exceeding ±0.20%.  Nonetheless, there is a link between the scale of
+loss and the type of EQE variation.  Modules with greatest ΔE are also those whose
+intramodule EQE variation is characterized by a wavelength dependence (category 3)
+or mixed variation (category 4). Variation in amplitude is likely to result primarily
+from systematic measurement error, for example due to variable cell illumination,
+and its effect is removed through an inherent normalization in the calculation
+of M.</p>
+<figure class="align-default" id="id2">
+<img alt="../_images/monthly_mission300_boxplot.png" src="../_images/monthly_mission300_boxplot.png" />
+<figcaption>
+<p><span class="caption-text">The monthly energy difference for the Mission300 module.  The Mission300 exhibits
+category 4 (mixed) cell-to-cell EQE variation, resulting in one of the largest
+energy differences both on a monthly and annual scale. The triangle and horizontal
+bar represent the mean and median ΔE, respectively</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="does-the-performance-impact-vary-seasonally-or-geographically">
+<h3>Does the performance impact vary seasonally or geographically?<a class="headerlink" href="#does-the-performance-impact-vary-seasonally-or-geographically" title="Permalink to this headline">#</a></h3>
+<p>Could the low annual ΔE be a result of month-to-month variations cancelling
+each other out? The monthly breakdown of ΔE values shown in Figure 2 for the Mission300
+module provide some insight into this.  The range in each month represents the range of
+ΔE across the contiguous USA while the triangle and horizontal bar represent
+the mean and median ΔE, respectively.  On a monthly scale, the energy
+difference is more significant than on an annual basis.  The range from month to month
+is almost double the annual energy difference, with an approximately 50:50 split between
+positive and negative ΔE months.</p>
+<p>Figure 3 presents the remaining results, complementary to Figure 2 but in a different
+form, for all modules.  The boxplots in Figure 3 illustrate the seasonality in ΔE,
+calculated for the whole year as the difference between the maximum ΔE month and the
+minimum ΔE month.</p>
+<p>Since ΔE can be positive or negative, besides reducing the annualized ΔE, this
+phenomenon also indicates that the driving cell under the prevailing spectrum
+can yield both an energy gain or loss with respect to performance driven by
+the mean EQE cell in the absence of intramodule EQE variation.</p>
+<figure class="align-default" id="id3">
+<img alt="../_images/seasonality_all_boxplot.png" src="../_images/seasonality_all_boxplot.png" />
+<figcaption>
+<p><span class="caption-text">Figure 3. Seasonality breakdown for all 11 modules. The seasonality boxplots show
+the energy difference between the minimum and maximum ΔE months, for each location,
+for all 11 modules.  In all plots, the horizontal bar represents the median, while
+the triangle represents the mean.</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>In terms of geography, ΔE has a range of 0.46% across all locations, which is
+over four times the annualized ΔE.  Another phenomenon related to location is
+the fact that the annual ΔE values are notably larger in the south/south east
+USA than in the western states. This effect is particularly significant in
+coastal states such as Florida, where the subtropical climate is driven by
+high levels of humidity that are known to increase the spectral influence on
+PV performance (Marion et al., 2014).</p>
+<p>Figure 4 presents the energy difference data, across the contiguous US, for a
+sample of four of the 11 modules. Each one of the four modules represents one of the
+four identified categories of cell-level EQE variation.  These modules are the Itek360
+(negligible) module, Panasonic325 (amplitude) module, Qpoly280 (wavelength)
+module, and the Mission300 (mixed) module.  Data for all 11 modules can be
+found at the end of this webpage.</p>
+<div id="sidebar-0" class="leaflet-sidebar collapsed" style="bottom:300px; display:none">
+    <!-- Nav tabs -->
+    <div class="leaflet-sidebar-tabs">
+        <ul role="tablist"> <!-- top aligned tabs -->
+            <li><a href="#calculations-0" role="tab"><i class="fa-solid fa-calculator"></i></a></li>
+        </ul>
+    </div>
+ 
+    <!-- Tab panes -->
+    <div class="leaflet-sidebar-content">
+        <div class="leaflet-sidebar-pane" id="calculations-0">
+            <h1 class="leaflet-sidebar-header" style="color: #fff">
+              Calculations
+              <div class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></div>
+            </h1>
+            
+            <p>Calculate a new layer from the difference between two layers:</p>
+            
+            <p>Layer 1: <select id="select-layer1-0"></select></p>
+            <p>Layer 2: <select id="select-layer2-0"></select></p>
+            
+            <p>The calculated layer is available in the layer dropdown widget.</p>
+        </div>
+    </div>
+</div>
+
+<div id="map-0" style="height: 500px; width: 100%">loading...</div>
+<p><em id="map-caption-0" style="font-size:0.9em"></em></p>
+
+<script>
+  $(window).on('load', function() {
+      init("0", {"id": "0", "geotiffSpecs": [{"label": "Itek360", "filename": "/pv-atlas/geotiffs/cell-level-smm/Itek360_annual_US_2022.tiff"}, {"label": "Panasonic325", "filename": "/pv-atlas/geotiffs/cell-level-smm/Panasonic325_annual_US_2022.tiff"}, {"label": "Qpoly280", "filename": "/pv-atlas/geotiffs/cell-level-smm/Qpoly280_annual_US_2022.tiff"}, {"label": "Mission300", "filename": "/pv-atlas/geotiffs/cell-level-smm/Mission300_annual_US_2022.tiff"}, {"label": "Figure 4. Annual energy difference, \u0394E , comparing P2 (mean EQE) and", "filename": "/pv-atlas/geotiffs/Figure 4. Annual energy difference, \u0394E , comparing P2 (mean EQE) and"}, {"label": "P1 (limiting EQE) over the course of the year for four sample modules", "filename": "/pv-atlas/geotiffs/P1 (limiting EQE) over the course of the year for four sample modules"}, {"label": "across the contiguous USA. Across all locations, the annualized \u0394E is", "filename": "/pv-atlas/geotiffs/across the contiguous USA. Across all locations, the annualized \u0394E is"}, {"label": "typically no greater than \u00b1 0.2%. Of all 11 modules, five modules", "filename": "/pv-atlas/geotiffs/typically no greater than \u00b1 0.2%. Of all 11 modules, five modules"}, {"label": "experience an annual energy loss, two experience an annual energy gain,", "filename": "/pv-atlas/geotiffs/experience an annual energy loss, two experience an annual energy gain,"}, {"label": "and four exhibit no significant annualized performance variation due to", "filename": "/pv-atlas/geotiffs/and four exhibit no significant annualized performance variation due to"}, {"label": "cell-level EQE variation.", "filename": "/pv-atlas/geotiffs/cell-level EQE variation."}], "colorscale_min": -0.2, "colorscale_max": 0.2, "colorscale_name": "RdBu", "colorscale_label_digits": 1, "short_description": "\u0394E [%]", "layers_title": "Module:"});
+  });
+</script>
+</section>
+</section>
+<section id="discussion">
+<h2>Discussion<a class="headerlink" href="#discussion" title="Permalink to this headline">#</a></h2>
+<p>While the absolute annual ΔE is restricted to only around 0.1%–0.2%, on a
+monthly basis the uncertainty due to cell-level EQE variation increases to
+almost 1%.  This increase in error has implications for subannual PV
+performance assessment applications such as capacity testing, which can last
+only a few days/weeks at any given time over the course of the year.</p>
+<p>Since the modules analyzed are new, one aspect to consider in future work is
+how these results may evolve over time.  A direct correlation between
+wavelength-dependent cell-level EQE variation and increased energy losses is
+observed.  PV module degradation is typically nonuniform across a module’s
+constituent cells, and different degradation modes can impact different
+wavelength regimes of the device EQE (Wang et al., 2020, Marion et al., 2014).
+Therefore, future studies should consider how nonuniform degradation and
+different degradation mechanisms may influence intramodule EQE variation and
+thus the energy losses reported in this work.</p>
+</section>
+<section id="conclusion">
+<h2>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">#</a></h2>
+<p>Cell-level EQE data have been ananlysed to determine the scale and nature of
+intramodule EQE variation and the any associated mismatch power losses.
+Overall, four categories of EQE variation have been identified: negligible
+variation, amplitude variation, wavelength-dependent variation, and mixed
+variation.  Amplitude variation is likely a result of systematic measurement
+error, but wavelength-dependent variation (shape fo the EQE curve) alters the
+spectral mismatch factor and, thus, determines the driving cell within the
+module.  On an annual timescale, comparing each module to its respective
+hypothetical counterpart that does not exhibit cell-level EQE variation, the
+difference in energy output is below approximately ±0.2%.  However, these
+energy losses suffered seasonal and geographical variation whereby on a
+month-to-month basis the energy difference can change by over four times the
+annualized difference, representing a range of almost 1%.  The seasonality
+of these results has implications for subannual PV performance applications
+such as capacity testing.  In future work, it will be important to consider
+how these results may evolve over time when the modules exposed outdoors.  It
+is possible that nonuniform degradation over a module’s lifetime may
+exacerbate the energy losses reported in this work.</p>
+<p>The full study may be found in Reference Daxini et al. (2025)</p>
+</section>
+<section id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">#</a></h2>
+<div class="docutils container" id="bibliography-1">
+<ol class="arabic simple" start="1">
+<li id="cite-1-daxini2025photovoltaic"><p>Rajiv Daxini, Kevin S Anderson, Joshua S Stein, and Marios Theristis. Photovoltaic module spectral mismatch losses due to cell-level eqe variation. <em>IEEE Journal of Photovoltaics</em>, 2025.</p></li>
+<li id="cite-1-marion2014analysis"><p>Bill Marion, Michael G Deceglie, and Timothy J Silverman. Analysis of measured photovoltaic module performance for florida, oregon, and colorado locations. <em>Solar energy</em>, 110:736–744, 2014.</p></li>
+<li id="cite-1-wang2020influence"><p>Zehui Wang, Honglie Shen, Dongli Hu, Qingzhu Wei, Zhichun Ni, Yufang Li, Luanhong Sun, and Hongqiang Qian. Influence of double current injection annealing on anti-lid effect in mono-like cast silicon perc solar cells. <em>Journal of Materials Science: Materials in Electronics</em>, 31:3221–3227, 2020.</p></li>
+</ol>
+</div>
+</section>
+<section id="data-files">
+<h2>Data files<a class="headerlink" href="#data-files" title="Permalink to this headline">#</a></h2>
+<p>The geographic datasets shown on this page are available in the GeoTIFF
+files listed below:</p>
+<table class="table">
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 73%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>GeoTIFF file</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="/pv-atlas/geotiffs/cell-level-smm/CSmono275_annual_US_2022.tiff"><img alt="/_static/thumbnails/geotiffs/cell-level-smm/CSmono275_annual_US_2022.png" src="../_images/CSmono275_annual_US_20221.png" /></a></p></td>
+<td><p>Description: Effect of cell-level variation in spectral response on annual energy, for the CSmono275 module.<p><a class="reference external" href="/pv-atlas/geotiffs/cell-level-smm/CSmono275_annual_US_2022.tiff"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;CSmono275_annual_US_2022.tiff - [140.8 KiB]</a></p>
+</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="/pv-atlas/geotiffs/cell-level-smm/CSpoly270_annual_US_2022.tiff"><img alt="/_static/thumbnails/geotiffs/cell-level-smm/CSpoly270_annual_US_2022.png" src="../_images/CSpoly270_annual_US_20221.png" /></a></p></td>
+<td><p>Description: Effect of cell-level variation in spectral response on annual energy, for the CSpoly270 module.<p><a class="reference external" href="/pv-atlas/geotiffs/cell-level-smm/CSpoly270_annual_US_2022.tiff"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;CSpoly270_annual_US_2022.tiff - [140.8 KiB]</a></p>
+</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="/pv-atlas/geotiffs/cell-level-smm/Itek360_annual_US_2022.tiff"><img alt="/_static/thumbnails/geotiffs/cell-level-smm/Itek360_annual_US_2022.png" src="../_images/Itek360_annual_US_20221.png" /></a></p></td>
+<td><p>Description: Effect of cell-level variation in spectral response on annual energy, for the Itek360 module.<p><a class="reference external" href="/pv-atlas/geotiffs/cell-level-smm/Itek360_annual_US_2022.tiff"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;Itek360_annual_US_2022.tiff - [140.8 KiB]</a></p>
+</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="/pv-atlas/geotiffs/cell-level-smm/Jinko260_annual_US_2022.tiff"><img alt="/_static/thumbnails/geotiffs/cell-level-smm/Jinko260_annual_US_2022.png" src="../_images/Jinko260_annual_US_20221.png" /></a></p></td>
+<td><p>Description: Effect of cell-level variation in spectral response on annual energy, for the Jinko260 module.<p><a class="reference external" href="/pv-atlas/geotiffs/cell-level-smm/Jinko260_annual_US_2022.tiff"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;Jinko260_annual_US_2022.tiff - [140.8 KiB]</a></p>
+</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="/pv-atlas/geotiffs/cell-level-smm/LG320_annual_US_2022.tiff"><img alt="/_static/thumbnails/geotiffs/cell-level-smm/LG320_annual_US_2022.png" src="../_images/LG320_annual_US_20221.png" /></a></p></td>
+<td><p>Description: Effect of cell-level variation in spectral response on annual energy, for the LG320 module.<p><a class="reference external" href="/pv-atlas/geotiffs/cell-level-smm/LG320_annual_US_2022.tiff"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;LG320_annual_US_2022.tiff - [140.8 KiB]</a></p>
+</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="/pv-atlas/geotiffs/cell-level-smm/LG400_annual_US_2022.tiff"><img alt="/_static/thumbnails/geotiffs/cell-level-smm/LG400_annual_US_2022.png" src="../_images/LG400_annual_US_20221.png" /></a></p></td>
+<td><p>Description: Effect of cell-level variation in spectral response on annual energy, for the LG400 module.<p><a class="reference external" href="/pv-atlas/geotiffs/cell-level-smm/LG400_annual_US_2022.tiff"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;LG400_annual_US_2022.tiff - [140.8 KiB]</a></p>
+</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="/pv-atlas/geotiffs/cell-level-smm/Mission300_annual_US_2022.tiff"><img alt="/_static/thumbnails/geotiffs/cell-level-smm/Mission300_annual_US_2022.png" src="../_images/Mission300_annual_US_20221.png" /></a></p></td>
+<td><p>Description: Effect of cell-level variation in spectral response on annual energy, for the Mission300 module.<p><a class="reference external" href="/pv-atlas/geotiffs/cell-level-smm/Mission300_annual_US_2022.tiff"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;Mission300_annual_US_2022.tiff - [140.8 KiB]</a></p>
+</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="/pv-atlas/geotiffs/cell-level-smm/Panasonic325_annual_US_2022.tiff"><img alt="/_static/thumbnails/geotiffs/cell-level-smm/Panasonic325_annual_US_2022.png" src="../_images/Panasonic325_annual_US_20221.png" /></a></p></td>
+<td><p>Description: Effect of cell-level variation in spectral response on annual energy, for the Panasonic325 module.<p><a class="reference external" href="/pv-atlas/geotiffs/cell-level-smm/Panasonic325_annual_US_2022.tiff"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;Panasonic325_annual_US_2022.tiff - [140.8 KiB]</a></p>
+</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="/pv-atlas/geotiffs/cell-level-smm/Qmono300_annual_US_2022.tiff"><img alt="/_static/thumbnails/geotiffs/cell-level-smm/Qmono300_annual_US_2022.png" src="../_images/Qmono300_annual_US_20221.png" /></a></p></td>
+<td><p>Description: Effect of cell-level variation in spectral response on annual energy, for the Qmono300 module.<p><a class="reference external" href="/pv-atlas/geotiffs/cell-level-smm/Qmono300_annual_US_2022.tiff"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;Qmono300_annual_US_2022.tiff - [140.8 KiB]</a></p>
+</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="/pv-atlas/geotiffs/cell-level-smm/Qpoly280_annual_US_2022.tiff"><img alt="/_static/thumbnails/geotiffs/cell-level-smm/Qpoly280_annual_US_2022.png" src="../_images/Qpoly280_annual_US_20221.png" /></a></p></td>
+<td><p>Description: Effect of cell-level variation in spectral response on annual energy, for the Qpoly280 module.<p><a class="reference external" href="/pv-atlas/geotiffs/cell-level-smm/Qpoly280_annual_US_2022.tiff"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;Qpoly280_annual_US_2022.tiff - [140.8 KiB]</a></p>
+</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="/pv-atlas/geotiffs/cell-level-smm/Solaria400_annual_US_2022.tiff"><img alt="/_static/thumbnails/geotiffs/cell-level-smm/Solaria400_annual_US_2022.png" src="../_images/Solaria400_annual_US_20221.png" /></a></p></td>
+<td><p>Description: Effect of cell-level variation in spectral response on annual energy, for the Solaria400 module.<p><a class="reference external" href="/pv-atlas/geotiffs/cell-level-smm/Solaria400_annual_US_2022.tiff"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;Solaria400_annual_US_2022.tiff - [140.8 KiB]</a></p>
+</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="/pv-atlas/geotiffs/cell-level-smm/Trina260_annual_US_2022.tiff"><img alt="/_static/thumbnails/geotiffs/cell-level-smm/Trina260_annual_US_2022.png" src="../_images/Trina260_annual_US_20221.png" /></a></p></td>
+<td><p>Description: Effect of cell-level variation in spectral response on annual energy, for the Trina260 module.<p><a class="reference external" href="/pv-atlas/geotiffs/cell-level-smm/Trina260_annual_US_2022.tiff"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;Trina260_annual_US_2022.tiff - [140.8 KiB]</a></p>
+</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="climatic-influence-plr.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Climatic influence on PLR uncertainty</p>
+        </div>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+      &copy; Copyright 2023-2024.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
