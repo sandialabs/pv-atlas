@@ -106,40 +106,48 @@ What is the impact on PV performance?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Figure 2 shows the annual energy difference between the potential
 non-mismatched output, as determined by the mean EQE, and the realistic module
-output, as determined by the limiting cell. The overall energy difference, ΔE,
-is relatively low for all modules, rarely exceeding ±0.20%.  Nonetheless,
-there is a link between the scale of loss and the type of EQE variation.  
-Modules with greatest ΔE are also those whose intramodule EQE variation is
-characterized by a wavelength dependence (category 3) or mixed variation
-(category 4). Variation in amplitude is likely to result primarily from
-systematic measurement error, for example due to variable cell illumination,
+output, as determined by the limiting cell. The data presented are for the Mission300
+module, as an example. The overall energy difference, ΔE, is relatively low for all
+modules, rarely exceeding ±0.20%.  Nonetheless, there is a link between the scale of
+loss and the type of EQE variation.  Modules with greatest ΔE are also those whose
+intramodule EQE variation is characterized by a wavelength dependence (category 3)
+or mixed variation (category 4). Variation in amplitude is likely to result primarily
+from systematic measurement error, for example due to variable cell illumination,
 and its effect is removed through an inherent normalization in the calculation
 of M.
 
 .. figure:: ../_static/monthly-seasonality-boxplots.png
+    The boxplot shows the monthly energy difference, for each location, for the
+    Mission300 module.  The Mission300 exhibits category 4 (mixed) cell-to-cell EQE
+    variation, resulting in one of the largest energy differences both on a monthly and
+    annual scale.
 
-    Figure 2. Seasonality breakdown for the 11 modules. Subplot (a)
-    presents the monthly energy difference, for each location, for the
-    Mission300 module. Subplot (b) shows the energy difference between the
-    minimum and maximum ΔE months, for each location, for all 11 modules.
-    In all plots, the horizontal bar represents the median, while the
-    triangle represents the mean.
+
 
 Does the performance impact vary seasonally or geographically?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Could the low annual ΔE be a result of month-to-month variations cancelling
-each other out? Taking the Mission300 module as an example, Figure 2 shows the
-monthly breakdown ΔE values.  The range in each month represents the range of
+each other out? The monthly breakdown of ΔE values shown in Figure 2 for the Mission300
+module provides some insight into this.  The range in each month represents the range of
 ΔE across the contiguous USA while the triangle and horizontal bar represent
 the mean and median ΔE, respectively.  On a monthly scale, the energy
 difference is more significant.  The range from month to month is almost
 double the annual energy difference, with an approximately 50:50 split between
-positive and negative ΔE months.
+positive and negative ΔE months. Figure 3 presents the remaining results in a different
+form, for all modules.  The boxplots in Figure 3 represent illustrate the seasonality
+in ΔE, calculated for the whole year as the difference between the maximum ΔE month and
+the minimum ΔE month.
 
 Since ΔE can be positive or negative, besides reducing the annualized ΔE, this
 phenomenon also indicates that the driving cell under the prevailing spectrum
 can yield both an energy gain or loss with respect to performance driven by
 the mean EQE cell in the absence of intramodule EQE variation.
+
+.. figure:: ../_static/monthly-seasonality-boxplots.png
+    Figure 3. Seasonality breakdown for all 11 modules. The seasonality boxplots show
+    the energy difference between the minimum and maximum ΔE months, for each location,
+    for all 11 modules.  In all plots, the horizontal bar represents the median, while
+    the triangle represents the mean.
 
 In terms of geography, ΔE has a range of 0.46% across all locations, which is
 over four times the annualized ΔE.  Another phenomenon related to location is
@@ -149,7 +157,7 @@ coastal states such as Florida, where the subtropical climate is driven by
 high levels of humidity that are known to increase the spectral influence on
 PV performance (Marion et al., 2014).
 
-Figure 3 presents the energy difference data, across the contiguous US, for a
+Figure 4 presents the energy difference data, across the contiguous US, for a
 sample of four of the 11 modules, which each represent one of the four
 identified categories of cell-level EQE variation.  These are the Itek360
 (negligible) module, Panasonic325 (amplitude) module, Qpoly280 (wavelength)
@@ -168,7 +176,7 @@ found at the end of this webpage.
     cell-level-smm/Qpoly280_annual_US_2022.tiff : Qpoly280
     cell-level-smm/Mission300_annual_US_2022.tiff : Mission300
 
-    Figure 3. Annual energy difference, ΔE , comparing P2 (mean EQE) and
+    Figure 4. Annual energy difference, ΔE , comparing P2 (mean EQE) and
     P1 (limiting EQE) over the course of the year for four sample modules
     across the contiguous USA. Across all locations, the annualized ΔE is
     typically no greater than ± 0.2%. Of all 11 modules, five modules
