@@ -116,10 +116,11 @@ from systematic measurement error, for example due to variable cell illumination
 and its effect is removed through an inherent normalization in the calculation
 of M.
 
-.. figure:: ../_static/monthly-seasonality-boxplots.png
+.. figure:: ../_static/monthly_mission300_boxplot.png
     The monthly energy difference for the Mission300 module.  The Mission300 exhibits
     category 4 (mixed) cell-to-cell EQE variation, resulting in one of the largest
-    energy differences both on a monthly and annual scale.
+    energy differences both on a monthly and annual scale. The triangle and horizontal
+    bar represent the mean and median ΔE, respectively
 
 
 
@@ -134,16 +135,17 @@ difference is more significant than on an annual basis.  The range from month to
 is almost double the annual energy difference, with an approximately 50:50 split between
 positive and negative ΔE months.
 
-Figure 3 presents the remaining results in a different form, for all modules.  The
-boxplots in Figure 3 illustrate the seasonality in ΔE, calculated for the whole year as
-the difference between the maximum ΔE month and the minimum ΔE month.
+Figure 3 presents the remaining results, complementary to Figure 2 but in a different
+form, for all modules.  The boxplots in Figure 3 illustrate the seasonality in ΔE,
+calculated for the whole year as the difference between the maximum ΔE month and the
+minimum ΔE month.
 
 Since ΔE can be positive or negative, besides reducing the annualized ΔE, this
 phenomenon also indicates that the driving cell under the prevailing spectrum
 can yield both an energy gain or loss with respect to performance driven by
 the mean EQE cell in the absence of intramodule EQE variation.
 
-.. figure:: ../_static/monthly-seasonality-boxplots.png
+.. figure:: ../_static/seasonality_all_boxplot.png
     Figure 3. Seasonality breakdown for all 11 modules. The seasonality boxplots show
     the energy difference between the minimum and maximum ΔE months, for each location,
     for all 11 modules.  In all plots, the horizontal bar represents the median, while
@@ -158,8 +160,8 @@ high levels of humidity that are known to increase the spectral influence on
 PV performance (Marion et al., 2014).
 
 Figure 4 presents the energy difference data, across the contiguous US, for a
-sample of four of the 11 modules, which each represent one of the four
-identified categories of cell-level EQE variation.  These are the Itek360
+sample of four of the 11 modules. Each one of the four modules represents one of the
+four identified categories of cell-level EQE variation.  These modules are the Itek360
 (negligible) module, Panasonic325 (amplitude) module, Qpoly280 (wavelength)
 module, and the Mission300 (mixed) module.  Data for all 11 modules can be
 found at the end of this webpage.
