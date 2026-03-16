@@ -5,7 +5,8 @@
 Impact of cell-to-cell EQE variation on power output
 ====================================================
 
-*Content contributed by National Renewable Energy Laboratory*
+*Content contributed by National Renewable Energy Laboratory under SETO
+award number 52776*
 
 Introduction
 ------------
