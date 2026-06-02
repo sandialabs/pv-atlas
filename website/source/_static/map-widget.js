@@ -278,7 +278,6 @@ function init(id, options){
     var layers = layerControl.getOverlays();
     for(var i = 0; i < layers.length; i++){
       var layer = layers[i];
-      console.log(layer);
       if(layer.name == e.name){
         text = "Description: " + layer.metadata['DESCRIPTION'] + " File date: " + layer.metadata["CREATION_DATE"] + ".";
         break;
