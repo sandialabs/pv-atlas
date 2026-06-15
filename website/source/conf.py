@@ -9,7 +9,7 @@ repo_url = "https://github.com/sandialabs/pv-atlas"
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = "PV Atlas"
-copyright = '2023-2024'
+copyright = '2023-2026'
 author = ''
 
 # -- General configuration ---------------------------------------------------
