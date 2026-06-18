@@ -2,8 +2,8 @@
 .. map-header::
 
 
-Impact of cell-to-cell EQE variation on power output
-====================================================
+Cell-level EQE variation
+========================
 
 *Content contributed by National Renewable Energy Laboratory under SETO
 award number 52776*
