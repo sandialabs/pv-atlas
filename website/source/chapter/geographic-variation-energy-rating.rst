@@ -2,8 +2,8 @@
 .. map-header::
 
 
-Geographic variation in energy rating
-=====================================
+Module energy rating
+====================
 
 *Content contributed by Sandia National Laboratories*
 
