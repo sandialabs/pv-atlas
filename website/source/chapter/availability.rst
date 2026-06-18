@@ -5,7 +5,11 @@
 Time-based availability
 =======================
 
-*Content contributed by Sandia National Laboratories*
+*Content contributed by Sandia National Laboratories under IESO grant 52770* |pvmac|_
+
+.. _pvmac: https://pvpmc.sandia.gov/pvmac/
+
+.. |pvmac| replace:: *(PVMAC)*
 
 Introduction
 ------------
