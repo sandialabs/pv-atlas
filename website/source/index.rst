@@ -60,3 +60,8 @@ This project uses many open-source software packages, including:
    chapter/geographic-variation-energy-rating
    chapter/climatic-influence-plr
    chapter/cell-eqe-influence
+   chapter/performance-ratio
+   chapter/availability
+   chapter/capacity-ratio
+   chapter/expected-yield
+

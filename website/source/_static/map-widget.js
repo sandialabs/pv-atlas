@@ -180,7 +180,7 @@ function init(id, options){
   $("#sidebar-" + id).css("display", "");  // overwrite default display:none
 
   // colorbar
-  if(options.colorscale_name !== '' && options.colorscale_min !== '' && options.colorscale_name !== ''){
+  if(options.colorscale_name !== '' && options.colorscale_min !== '' && options.colorscale_max !== ''){
     L.Control.colorbar = L.Control.extend({
        onAdd: function(map) {
          var container = L.DomUtil.create('div', 'leaflet-control-layers leaflet-control');
